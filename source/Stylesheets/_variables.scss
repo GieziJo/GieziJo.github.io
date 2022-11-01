@@ -1,0 +1,41 @@
+$primaryColor: #1e1e1e;
+$secondaryColor: #008cff;
+
+
+$minWidth: 850px;
+$maxWidth: 1200px;
+
+// $headerFont: 'Sigmar One', cursive;
+@font-face {
+    font-family: "Readexpro";
+    src: url("/Fonts/ReadexPro-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Readexpro";
+    src: url("/Fonts/ReadexPro-bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Readexpro";
+    src: url("/Fonts/ReadexPro-ExtraLight.ttf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Readexpro";
+    src: url("/Fonts/ReadexPro-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Readexpro";
+    src: url("/Fonts/ReadexPro-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Readexpro";
+    src: url("/Fonts/ReadexPro-SemiBold.ttf");
+    font-weight: 600;
+}
+
+$headerFont: "Readexpro";
+$textFont: "Readexpro";

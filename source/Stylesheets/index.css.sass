@@ -1,0 +1,275 @@
+@import "_variables"
+@import "_icons"
+
+html
+    scroll-behavior: smooth
+
+body
+    background-color: $primaryColor   
+
+a
+    text-decoration: none
+    color: inherit
+    &:hover
+        color: $secondaryColor
+
+.index
+    position: absolute
+    width: 100%
+    height: 100%
+
+.column
+    margin-left: auto
+    margin-right: auto
+    // height: 100%
+    // padding-bottom: 10px
+    width: 800px
+
+    @media only screen and (max-width: 800px)
+        width: 80%
+    
+    
+    
+    
+
+.headerImage
+    background-image: url("/Images/Header.jpg")
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-position-x: center
+    background-position-y: -200px
+    background-size: contain
+    height: 350px
+    .column
+        .profileTitle
+            position: absolute
+            top: 150px
+            font-weight: 200
+            color: white
+            text-shadow: 0px 0px 5px black, 0px 0px 4px black
+            
+            font-size: 1.8em
+
+.profileImage
+    justify-content: right
+    display: flex
+    margin-top: -150px
+    
+    img
+        width: 200px
+        height: 200px
+        border-radius: 100%
+        border: solid white 5px
+        box-shadow: 0px 0px 0px 6px $primaryColor
+
+
+.headerIcons
+    position: absolute
+    top: -14px
+
+#navigation, .social
+    nav
+        a
+            transition: 400ms transform, 400ms color
+            &:hover
+                transform: scale(1.1)
+
+#navigation
+    display: inline-block
+    nav
+        a
+            color: white
+            background-color: $primaryColor
+            margin: 10px
+            display: inline-block
+            padding: 2px 10px 2px 10px
+            border-radius: 5px
+            text-decoration: none
+            box-shadow: 0px 0px 0px 4px $primaryColor
+            &:hover
+                color: $secondaryColor
+
+.activateNavigation
+    position: fixed
+    top: 0px
+    width: 100%
+    background-color: $primaryColor
+    // display: flex !important
+    // justify-content: center !important
+    &::before
+        content: ''
+        background-color: $primaryColor
+        left: -100%
+        position: absolute
+        width: 100%
+        top: 0px
+        height: 100%
+        
+    nav
+        a:not(a ~ a)
+            display: inline-block !important
+
+#navigation nav a:not(a ~ a)
+    display: none
+
+.social
+    display: inline-block
+    padding-left: 100px
+    nav
+        a
+            color: black
+            margin: 10px
+            display: inline-block
+            background-color: white
+            // padding: 2px 10px 2px 10px
+            width: 25px
+            padding-left: 1px
+            height: 23px
+            padding-top: 3px
+            text-align: center
+            border-radius: 100%
+            text-decoration: none
+            box-shadow: 0px 0px 0px 4px $primaryColor
+            &:hover
+                color: $secondaryColor
+    
+
+.contentSection
+    color: white
+    h1
+        color: $secondaryColor
+
+.intro
+    font-size: 1.2em
+    font-weight: 400
+    font-style: italic
+    a
+        text-decoration: underline
+
+#aboutMe
+    
+
+
+#science
+    background-color: white
+    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    padding-top: 20px
+    padding-bottom: 40px
+    .contentSection
+        color: black
+
+
+.papers
+.paper
+    margin-top: 10px
+    margin-bottom: 10px
+    &:hover
+        color: $secondaryColor
+        cursor: pointer
+.paperTitle
+    font-weight: 700
+.paperInfo
+    font-weight: 200
+
+#gameDev
+    font-weight: 300
+#gameDev h1
+    text-align: right
+
+#gameDev .EarlyCoffeeImg
+    width: 220px
+    height: 220px
+    border-radius: 100%
+    // border: 5px solid $primaryColor
+    background-color: $primaryColor
+    justify-content: center
+    display: flex    
+    box-shadow: 0px -8px 10px -6px $primaryColor
+    float: left
+    margin-top: -100px
+    &:hover
+        cursor: pointer
+
+#gameDev .EarlyCoffeeImg img
+    width: 180px
+    height: 180px
+    margin-left: 8px
+    margin-top: 4px
+    transition: 400ms transform
+    &:hover
+        transform: scale(1.1)
+
+#gameDev a
+    text-decoration: underline
+
+#gameDev ul li
+    margin-top: 5px
+    margin-bottom: 5px
+
+#gameDev .rightInsert
+    width: 300px
+    float: right
+    margin: 20px
+    margin-right: -150px
+    border-radius: 20px
+    border: $primaryColor solid 10px
+    box-shadow: 0px 8px 10px -6px $primaryColor
+    transition: 400ms transform
+    &:hover
+        transform: scale(1.1)
+
+#gameDev #Hermit
+    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    margin-top: 30px
+    padding-top: 30px
+    margin-bottom: 10px
+    background-image: url("/Images/GameDev/HermitSplash.png")
+    // background-image: url("https://filedn.eu/lgUOHeW73WkzUY76gfcY8s5/EarlyCoffee.Games/Images/Instagram/7.gif")
+    background-position-y: bottom
+    background-position-x: center
+    background-size: cover
+    background-attachment: fixed
+
+
+#gameDev #Hermit .HermitLogo
+    height: 100px
+    justify-content: center
+    display: flex
+    padding: 20px
+    margin-bottom: 30px
+    transition: 400ms transform
+    &:hover
+        transform: scale(1.1)
+
+#gameDev #Hermit .column
+    
+    margin-top: 30px
+    margin-bottom: 30px
+    padding-top: 10px
+    padding-bottom: 10px
+
+    color: white
+    text-shadow: 0px 0px 6px black
+
+.HermitFrame
+    justify-content: center
+    display: flex
+    margin-top: 50px
+    margin-bottom: 50px
+
+
+.copyright
+    color: white
+    font-size: 10px
+    text-align: center
+    margin-top: 20px
+    margin-bottom: 0px
+    a
+        text-decoration: underline
+
+
+// #gameDev #Hermit .contentSection
+//     // backdrop-filter: blur(5px)
+//     padding-top: 10px
+//     padding-bottom: 10px
+//     margin: 10px
