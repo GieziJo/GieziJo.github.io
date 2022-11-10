@@ -18,6 +18,7 @@ require 'slim/include'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/CNAME', layout: false
 
 # configure :development do
 #   activate :livereload, :host => '0.0.0.0', :port => '1234'
