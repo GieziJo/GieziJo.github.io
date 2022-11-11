@@ -19,6 +19,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/CNAME', layout: false
+page '/CV_Giezendanner.pdf', layout: false
 
 # configure :development do
 #   activate :livereload, :host => '0.0.0.0', :port => '1234'
