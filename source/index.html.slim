@@ -32,8 +32,36 @@
                     a.icon.icon-twitter href="https://twitter.com/JoGiezi"  target="_blank"  rel="noopener noreferrer"
         
         .contentSection
-            h1 About me
-            .intro
+            .intro#aboutMeIntro
+                | Passionate about the natural environment, machine learning and remote sensing, my principal focus is on 
+                b.highlightText Deep Learning
+                |  using 
+                b.highlightText Remote Sensing
+                |  applied to 
+                b.highlightText Flood Mapping
+                |  and other envrionmental and societal challenges.
+                br
+                br
+                | Currently Postdoctoral Research Associate at the 
+                a href="https://www.arizona.edu/" target="_blank"  rel="noopener noreferrer" Univerity of Arizona
+                |  in the 
+                a href="https://beth-tellman.github.io/" target="_blank"  rel="noopener noreferrer" Social Pixel Lab
+                |  led by Prof. E. Tellman in Tucson.
+                br
+                br
+                | Co-founded the company 
+                a href="https://earlycoffee.games/" target="_blank"  rel="noopener noreferrer" Early Coffee Games
+                |  where I am the lead developer in my spare time.
+                br
+                br
+                a#fullCV href=""
+                    <i class="fa-solid fa-file"></i>
+                    |  Full CV
+
+    #background
+        .column
+            .contentSection
+                h1 Background
                 | With an background in 
                 b Environmental and Computational Engineering and Sciences
                 | , both from the 
@@ -51,8 +79,10 @@
                 |  led by Prof. E. Tellman Sullivan, I am expanding my understanding of 
                 b deep Learning
                 |  methods applied to floods and other challenging problems linked to the environment and its impact on society.
-                
-
+    
+    / .column
+    /     .contentSection
+    /         h1 Science
     #science
         .column
             .contentSection
@@ -159,7 +189,7 @@
         | © 2022 Jonathan Giezendanner
         br
         | Source code for this website avaialable under MIT Licence on 
-        a href="" Github
+        a href="https://github.com/GieziJo/GieziJo.github.io" Github
 
 <script>var scrollFun = function() {(window.scrollY > 350) ? navigation.classList.add("activateNavigation"):navigation.classList.remove("activateNavigation")};</script>
 <script>window.addEventListener("scroll", scrollFun);</script>

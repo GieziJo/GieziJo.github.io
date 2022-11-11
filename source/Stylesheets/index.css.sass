@@ -8,7 +8,7 @@ body
     background-color: $primaryColor   
 
 a
-    text-decoration: none
+    text-decoration: underline
     color: inherit
     &:hover
         color: $secondaryColor
@@ -30,7 +30,8 @@ a
     
     
     
-    
+.highlightText
+    color: $secondaryColor
 
 .headerImage
     background-image: url("../Images/Header.jpg")
@@ -140,19 +141,55 @@ a
         color: $secondaryColor
 
 .intro
-    font-size: 1.2em
-    font-weight: 400
-    font-style: italic
-    a
-        text-decoration: underline
+    font-size: 1.25em
+    line-height: 1.4em
+    font-weight: 500
+    // font-style: italic
 
 #aboutMe
     
+#aboutMeIntro
+    margin-top: 30px
+    margin-bottom: 30px
 
+#fullCV
+    color: $primaryColor
+    display: inline-block
+    background-color: white
+    padding-top: 2px
+    padding-bottom: 5px
+    padding-right: 8px
+    padding-left: 8px
+    border-radius: 5px
+    &:hover
+        color: $secondaryColor
+
+#background
+    background-image: url("../Images/AboutMe/LobHorn.jpg")
+    background-position-y: top
+    background-position-x: center
+    background-size: cover
+    background-attachment: fixed
+    background-color: white
+    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    padding-top: 20px
+    padding-bottom: 40px
+    .contentSection
+        color: black
+        background-color: #ffffff8e
+        backdrop-filter: blur(10px)
+        padding-left: 10px
+        padding-right: 10px
+        padding-bottom: 20px
+        // border: solid black 1px
+        border-radius: 5px
+        // text-shadow: 0px 0px 5px black, 0px 0px 4px black
+        // background-color: red
 
 #science
     background-color: white
-    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    box-shadow: inset 0px -8px 10px -6px $primaryColor
     padding-top: 20px
     padding-bottom: 40px
     .contentSection
