@@ -138,6 +138,7 @@ a {
 
 .activateNavigation {
   position: fixed;
+  z-index: 2;
   top: 0px;
   width: 100%;
   background-color: #1e1e1e; }
@@ -203,13 +204,13 @@ a {
 
 #background {
   background-image: url("../Images/AboutMe/LobHorn.jpg");
-  background-position-y: top;
+  background-position-y: center;
   background-position-x: center;
   background-size: cover;
   background-attachment: fixed;
   background-color: white;
-  -webkit-box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
-          box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
+  -webkit-box-shadow: inset 0px 8px 10px -10px #1e1e1e;
+          box-shadow: inset 0px 8px 10px -10px #1e1e1e;
   padding-top: 20px;
   padding-bottom: 40px; }
   #background .contentSection {
@@ -220,12 +221,13 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 20px;
-    border-radius: 5px; }
+    padding-top: 1px;
+    border-radius: 10px; }
 
 #science {
   background-color: white;
-  -webkit-box-shadow: inset 0px -8px 10px -6px #1e1e1e;
-          box-shadow: inset 0px -8px 10px -6px #1e1e1e;
+  -webkit-box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
+          box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
   padding-top: 20px;
   padding-bottom: 40px; }
   #science .contentSection {
