@@ -92,6 +92,7 @@ a
 
 .activateNavigation
     position: fixed
+    z-index: 2
     top: 0px
     width: 100%
     background-color: $primaryColor
@@ -166,12 +167,13 @@ a
 
 #background
     background-image: url("../Images/AboutMe/LobHorn.jpg")
-    background-position-y: top
+    background-position-y: center
     background-position-x: center
     background-size: cover
     background-attachment: fixed
     background-color: white
-    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    box-shadow: inset 0px 8px 10px -10px $primaryColor
     padding-top: 20px
     padding-bottom: 40px
     .contentSection
@@ -181,15 +183,14 @@ a
         padding-left: 10px
         padding-right: 10px
         padding-bottom: 20px
-        // border: solid black 1px
-        border-radius: 5px
-        // text-shadow: 0px 0px 5px black, 0px 0px 4px black
-        // background-color: red
+        padding-top: 1px
+        border-radius: 10px
+
 
 #science
     background-color: white
-    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
-    box-shadow: inset 0px -8px 10px -6px $primaryColor
+    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    // box-shadow: inset 0px -8px 10px -6px $primaryColor
     padding-top: 20px
     padding-bottom: 40px
     .contentSection
