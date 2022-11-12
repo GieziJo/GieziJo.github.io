@@ -239,13 +239,6 @@ a
     margin: 20px
     margin-right: -150px
     border-radius: 20px
-    border: $primaryColor solid 10px
-    box-shadow: 0px 8px 10px -6px $primaryColor
-    transition: 400ms transform
-    &:hover
-        transform: scale(1.1)
-    
-    
 
     @media only screen and (max-width: 1100px)
         float: none
@@ -266,6 +259,31 @@ a
         box-shadow: none
         border: none
 
+.leftInsert
+    width: 300px
+    float: left
+    margin: 20px
+    margin-left: -150px
+    border-radius: 20px
+
+    @media only screen and (max-width: 1100px)
+        float: none
+        max-width: 800px
+        box-shadow: none
+        border: none
+        display: block
+        margin: auto
+        margin-top: 20px
+        margin-bottom: 20px
+    
+    
+    @media only screen and (max-width: 800px)
+        float: none
+        margin: 20px
+        margin-left: -20px
+        width: 100%
+        box-shadow: none
+        border: none
 
 #science, #sciencePublication
     background-color: white
@@ -277,7 +295,6 @@ a
         color: black
 
 .scienceWorkContent
-    height: 400px
     color: black
     background-color: #ffffffaf
     backdrop-filter: blur(10px)
@@ -302,10 +319,40 @@ a
     // box-shadow: inset 0px 8px 10px -10px $primaryColor
     padding-top: 40px
     padding-bottom: 40px
+    // .scienceWorkContent
+    //     height: 1100px
 
     @media only screen and (max-width: 800px)
         background-position-y: bottom
         background-attachment: local
+
+.NIPInsert
+    padding: 10px
+    border-radius: 5px
+    background-color: white
+    overflow: hidden
+    img
+        width: 100%
+    span
+        display: block
+        padding-top: 5px
+        font-size: .8em
+        font-style: italic
+        text-align: justify
+
+
+#NIPMappedImg
+    width: 500px
+    margin-left: -300px
+#NIPErrorImg
+
+#NIPTimeSeriesImg
+    width: 500px
+    margin-left: -300px
+#NIPYearlyMaxImg
+
+#NIPReturnPeriodImg
+
 
 .papers
 .paper
@@ -361,6 +408,13 @@ a
 #gameDev ul li
     margin-top: 5px
     margin-bottom: 5px
+
+#chromaticImage
+    border: $primaryColor solid 10px
+    box-shadow: 0px 8px 10px -6px $primaryColor
+    transition: 400ms transform
+    &:hover
+        transform: scale(1.1)
 
 #gameDev #Hermit
     box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor

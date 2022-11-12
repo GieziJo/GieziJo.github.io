@@ -95,11 +95,8 @@
                 | . The game has received several grants for its development and promotion.
                 br
                 br
-                | In my free time, I enjoy mountaineering, skiing (when I'm not living in the desert), road and mountain biking, board and video games, movies, music, as well as music festivals, and last but not least, cheese, coffee and beer.
-    
-    / .column
-    /     .contentSection
-    /         h1 Science
+                | In my free time, I enjoy mountaineering, skiing (when I'm not living in the desert), road and mountain biking, board and video games, movies, music (especially music festivals, I used to organise one), and last but not least, cheese, coffee and beer.
+                
     #science
         .column
             .contentSection
@@ -127,6 +124,67 @@
                 .contentSection
                     .scienceWorkContent
                         h3 Historical Mapping of Bangladesh Floods - MODIS / Sentinel-1 DL Fusion
+                        | Economic impacts of floods push people into poverty and cause setbacks to development as government budgets are stretched and people without financial protection are forced to sell assets.
+                        br
+                        br
+                        | Accurate return period estimates of flood events are paramount to develop robust insurance products.
+                        br
+                        br
+                        | By combining historical MODIS satellite images with modern Sentinel-1 images, we produce reliable return period estimates.
+                        br
+                        .NIPInsert#NIPMappedImg.leftInsert
+                            img src="./Images/Science/NIP/Mapped.png"
+                            span MODIS False Color Composit (FCC) along with Observed and Infered fraction of flooded area, result of deep learning fusion between MODIS and derived Sentinel-1 data, with error, for a chosen date selected out of the testing Set (Aug. 7 2018).
+                        
+                        br
+                        
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur dapibus quam vel cursus. Nam vel dictum mi, ac suscipit elit. Quisque at eros id velit molestie accumsan. Nam arcu nibh, facilisis sit amet erat non, facilisis tincidunt massa. Etiam aliquam tempus lacus. Proin ornare neque lectus, vel malesuada erat rutrum et. Nunc scelerisque augue quis ipsum venenatis, sit amet tempus sem feugiat. Sed ultricies vehicula bibendum. Suspendisse potenti. Sed finibus ultrices arcu ac interdum. Suspendisse metus quam, venenatis ac felis ut, volutpat faucibus lacus. Pellentesque porta turpis eu tellus congue auctor. Praesent scelerisque neque ligula, non eleifend purus porta sit amet. Nulla pellentesque leo et ligula faucibus, ac fermentum augue convallis. Sed risus urna, tincidunt at pretium mollis, vestibulum sit amet metus.
+                        
+                        br
+
+                        .NIPInsert#NIPErrorImg.rightInsert
+                            img src="./Images/Science/NIP/ErrorDistribution.png"
+                            span Error distribution for a single day (Aug. 7 2018) between the observation (Sentinel-1 algorithm) and Model.
+                        
+                        
+                        br
+
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur dapibus quam vel cursus. Nam vel dictum mi, ac suscipit elit. Quisque at eros id velit molestie accumsan. Nam arcu nibh, facilisis sit amet erat non, facilisis tincidunt massa. Etiam aliquam tempus lacus. Proin ornare neque lectus, vel malesuada erat rutrum et. Nunc scelerisque augue quis ipsum venenatis, sit amet tempus sem feugiat. Sed ultricies vehicula bibendum. Suspendisse potenti. Sed finibus ultrices arcu ac interdum. Suspendisse metus quam, venenatis ac felis ut, volutpat faucibus lacus. Pellentesque porta turpis eu tellus congue auctor. Praesent scelerisque neque ligula, non eleifend purus porta sit amet. Nulla pellentesque leo et ligula faucibus, ac fermentum augue convallis. Sed risus urna, tincidunt at pretium mollis, vestibulum sit amet metus.
+
+                        br
+
+                        .NIPInsert#NIPTimeSeriesImg.leftInsert
+                            img src="./Images/Science/NIP/TimeSeries.png"
+                            span Observed and Infered time series of fraction of flooded area for a single chip (see above) for the training and testing set. This model is used for the historical time series inference (see below).
+                        
+                        
+                        br
+
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur dapibus quam vel cursus. Nam vel dictum mi, ac suscipit elit. Quisque at eros id velit molestie accumsan. Nam arcu nibh, facilisis sit amet erat non, facilisis tincidunt massa. Etiam aliquam tempus lacus. Proin ornare neque lectus, vel malesuada erat rutrum et. Nunc scelerisque augue quis ipsum venenatis, sit amet tempus sem feugiat. Sed ultricies vehicula bibendum. Suspendisse potenti. Sed finibus ultrices arcu ac interdum. Suspendisse metus quam, venenatis ac felis ut, volutpat faucibus lacus. Pellentesque porta turpis eu tellus congue auctor. Praesent scelerisque neque ligula, non eleifend purus porta sit amet. Nulla pellentesque leo et ligula faucibus, ac fermentum augue convallis. Sed risus urna, tincidunt at pretium mollis, vestibulum sit amet metus.
+
+                        br
+
+                        .NIPInsert#NIPYearlyMaxImg.rightInsert
+                            img src="./Images/Science/NIP/YearlyMaximum.png"
+                            span Historical yearly maxima of fraction of flooded area infered from the trained model and run on the historical MODIS dataset. Comparison with the <a href="https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase"> Global Flood Database algorithm (GFD)</a>.
+                        
+                        
+                        br
+
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur dapibus quam vel cursus. Nam vel dictum mi, ac suscipit elit. Quisque at eros id velit molestie accumsan. Nam arcu nibh, facilisis sit amet erat non, facilisis tincidunt massa. Etiam aliquam tempus lacus. Proin ornare neque lectus, vel malesuada erat rutrum et. Nunc scelerisque augue quis ipsum venenatis, sit amet tempus sem feugiat. Sed ultricies vehicula bibendum. Suspendisse potenti. Sed finibus ultrices arcu ac interdum. Suspendisse metus quam, venenatis ac felis ut, volutpat faucibus lacus. Pellentesque porta turpis eu tellus congue auctor. Praesent scelerisque neque ligula, non eleifend purus porta sit amet. Nulla pellentesque leo et ligula faucibus, ac fermentum augue convallis. Sed risus urna, tincidunt at pretium mollis, vestibulum sit amet metus.
+
+                        br
+
+                        .NIPInsert#NIPReturnPeriodImg.leftInsert
+                            img src="./Images/Science/NIP/ReturnPeriod.png"
+                            span Return period estimtes based on the newly proposed MODIS Sentinel-1 fusion algorithm and on the GFD algorithm for the historical time series 2001-2020.
+                        
+                        
+                        br
+
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur dapibus quam vel cursus. Nam vel dictum mi, ac suscipit elit. Quisque at eros id velit molestie accumsan. Nam arcu nibh, facilisis sit amet erat non, facilisis tincidunt massa. Etiam aliquam tempus lacus. Proin ornare neque lectus, vel malesuada erat rutrum et. Nunc scelerisque augue quis ipsum venenatis, sit amet tempus sem feugiat. Sed ultricies vehicula bibendum. Suspendisse potenti. Sed finibus ultrices arcu ac interdum. Suspendisse metus quam, venenatis ac felis ut, volutpat faucibus lacus. Pellentesque porta turpis eu tellus congue auctor. Praesent scelerisque neque ligula, non eleifend purus porta sit amet. Nulla pellentesque leo et ligula faucibus, ac fermentum augue convallis. Sed risus urna, tincidunt at pretium mollis, vestibulum sit amet metus.
+
+                        br
     #sciencePast
         .column
             .contentSection
@@ -191,7 +249,7 @@
                 ul
                     li In 2020 we received the <b><a href="https://prohelvetia.ch">ProHelvetia</a> pre-production grant</b> for our debut game 
                         <a href='https://Underwatertale.com'>Hermit: an Underwater Tale</a> (see below)
-                        . This allowed us to hire <a href="">Plume Oggier</a> for creating the game's music, <a href="">Gwen Buord</a> to produce the game's sounds, as well as <a href="">Jonathan Fellay</a> for the narrative part of the adventure. <a href=""><img class=rightInsert src="./Images/GameDev/chromatic.png"></a> 
+                        . This allowed us to hire <a href="">Plume Oggier</a> for creating the game's music, <a href="">Gwen Buord</a> to produce the game's sounds, as well as <a href="">Jonathan Fellay</a> for the narrative part of the adventure. <a href=""><img class=rightInsert id=chromaticImage src="./Images/GameDev/chromatic.png"></a> 
                     li In 2021 the museum <a href="">Espace Jean-Tinguely Nicki de Saint Phalle</a> contatracted us to create a unique art piece complementing their exhibition. We created <a href="">Chromatic Racing</a>, an interactive piece, which invites the visitor to create a piece of art by playing the game. The piece is exposed form 2019 to 2024.
                     li In 2022 we were selected for the Swiss delegation to go to the <a>Games Developers Conference (GDC)</a> in San-Francisco, where we showed Hermit.
                 | The main focus of the studio is currently to develop Hermit.
