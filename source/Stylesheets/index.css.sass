@@ -21,12 +21,10 @@ a
 .column
     margin-left: auto
     margin-right: auto
-    // height: 100%
-    // padding-bottom: 10px
     width: 800px
 
     @media only screen and (max-width: 800px)
-        width: 80%
+        width: 80% !important
     
     
     
@@ -38,9 +36,13 @@ a
     background-attachment: fixed
     background-repeat: no-repeat
     background-position-x: center
-    background-position-y: -200px
-    background-size: contain
+    background-position-y: -350px
+    background-size: cover
     height: 350px
+
+    @media only screen and (max-width: 800px)
+        height: 400px
+    
     .column
         .profileTitle
             position: absolute
@@ -51,10 +53,17 @@ a
             
             font-size: 1.8em
 
+            @media only screen and (max-width: 800px)
+                position: relative !important 
+
 .profileImage
     justify-content: right
     display: flex
     margin-top: -150px
+
+    @media only screen and (max-width: 800px)
+        justify-content: center
+        margin-top: -100px
     
     img
         width: 200px
@@ -67,6 +76,10 @@ a
 .headerIcons
     position: absolute
     top: -14px
+
+    @media only screen and (max-width: 800px)
+        position: relative
+        top: 10px
 
 #navigation, .social
     nav
@@ -96,6 +109,8 @@ a
     top: 0px
     width: 100%
     background-color: $primaryColor
+    @media only screen and (max-width: 800px)
+        right: 0px
     // display: flex !important
     // justify-content: center !important
     &::before
@@ -106,6 +121,8 @@ a
         width: 100%
         top: 0px
         height: 100%
+        @media only screen and (max-width: 800px)
+            width: 0px
         
     nav
         a:not(a ~ a)
@@ -117,6 +134,8 @@ a
 .social
     display: inline-block
     padding-left: 100px
+    @media only screen and (max-width: 800px)
+        padding-left: 0px
     nav
         a
             color: black
@@ -172,10 +191,16 @@ a
     background-size: cover
     background-attachment: fixed
     background-color: white
+    background-repeat: no-repeat
     // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
     box-shadow: inset 0px 8px 10px -10px $primaryColor
     padding-top: 20px
     padding-bottom: 40px
+
+    @media only screen and (max-width: 800px)
+        background-position-y: bottom
+        background-attachment: local
+
     .contentSection
         color: black
         background-color: #ffffff8e
@@ -227,6 +252,12 @@ a
     margin-top: -100px
     &:hover
         cursor: pointer
+    
+
+    @media only screen and (max-width: 800px)
+        float: none
+        margin-top: 0px
+        width: 100%
 
 #gameDev .EarlyCoffeeImg img
     width: 180px
@@ -255,6 +286,15 @@ a
     transition: 400ms transform
     &:hover
         transform: scale(1.1)
+    
+    
+    @media only screen and (max-width: 800px)
+        float: none
+        margin: 20px
+        margin-left: -20px
+        width: 100%
+        box-shadow: none
+        border: none
 
 #gameDev #Hermit
     box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
@@ -262,11 +302,14 @@ a
     padding-top: 30px
     margin-bottom: 10px
     background-image: url("../Images/GameDev/HermitSplash.png")
-    // background-image: url("https://filedn.eu/lgUOHeW73WkzUY76gfcY8s5/EarlyCoffee.Games/Images/Instagram/7.gif")
     background-position-y: bottom
     background-position-x: center
     background-size: cover
     background-attachment: fixed
+
+    @media only screen and (max-width: 800px)
+        // background-position-y: bottom
+        background-attachment: local
 
 
 #gameDev #Hermit .HermitLogo
@@ -286,14 +329,27 @@ a
     padding-top: 10px
     padding-bottom: 10px
 
-    color: white
-    text-shadow: 0px 0px 6px black
+    // color: white
+    // text-shadow: 0px 0px 6px black
 
 .HermitFrame
     justify-content: center
     display: flex
     margin-top: 50px
     margin-bottom: 50px
+
+.HermitContent
+    color: white
+    // background-color: #ffffff8e
+    backdrop-filter: blur(5px)
+    padding: 10px
+    text-shadow: 0px 0px 6px black
+    // padding-left: 10px
+    // padding-right: 10px
+    // padding-bottom: 20px
+    // padding-top: 1px
+    border-radius: 10px
+
 
 
 .copyright
