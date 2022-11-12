@@ -76,7 +76,7 @@ a {
   width: 800px; }
   @media only screen and (max-width: 800px) {
     .column {
-      width: 80%; } }
+      width: 80% !important; } }
 .highlightText {
   color: #008cff; }
 
@@ -85,9 +85,12 @@ a {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: -200px;
-  background-size: contain;
+  background-position-y: -350px;
+  background-size: cover;
   height: 350px; }
+  @media only screen and (max-width: 800px) {
+    .headerImage {
+      height: 400px; } }
   .headerImage .column .profileTitle {
     position: absolute;
     top: 150px;
@@ -95,11 +98,17 @@ a {
     color: white;
     text-shadow: 0px 0px 5px black, 0px 0px 4px black;
     font-size: 1.8em; }
-
+    @media only screen and (max-width: 800px) {
+      .headerImage .column .profileTitle {
+        position: relative !important; } }
 .profileImage {
   justify-content: right;
   display: flex;
   margin-top: -150px; }
+  @media only screen and (max-width: 800px) {
+    .profileImage {
+      justify-content: center;
+      margin-top: -100px; } }
   .profileImage img {
     width: 200px;
     height: 200px;
@@ -111,7 +120,10 @@ a {
 .headerIcons {
   position: absolute;
   top: -14px; }
-
+  @media only screen and (max-width: 800px) {
+    .headerIcons {
+      position: relative;
+      top: 10px; } }
 #navigation nav a, .social nav a {
   -webkit-transition: 400ms color, 400ms -webkit-transform;
   transition: 400ms color, 400ms -webkit-transform;
@@ -142,6 +154,9 @@ a {
   top: 0px;
   width: 100%;
   background-color: #1e1e1e; }
+  @media only screen and (max-width: 800px) {
+    .activateNavigation {
+      right: 0px; } }
   .activateNavigation::before {
     content: '';
     background-color: #1e1e1e;
@@ -150,6 +165,9 @@ a {
     width: 100%;
     top: 0px;
     height: 100%; }
+    @media only screen and (max-width: 800px) {
+      .activateNavigation::before {
+        width: 0px; } }
   .activateNavigation nav a:not(a ~ a) {
     display: inline-block !important; }
 
@@ -159,6 +177,9 @@ a {
 .social {
   display: inline-block;
   padding-left: 100px; }
+  @media only screen and (max-width: 800px) {
+    .social {
+      padding-left: 0px; } }
   .social nav a {
     color: black;
     margin: 10px;
@@ -209,10 +230,15 @@ a {
   background-size: cover;
   background-attachment: fixed;
   background-color: white;
+  background-repeat: no-repeat;
   -webkit-box-shadow: inset 0px 8px 10px -10px #1e1e1e;
           box-shadow: inset 0px 8px 10px -10px #1e1e1e;
   padding-top: 20px;
   padding-bottom: 40px; }
+  @media only screen and (max-width: 800px) {
+    #background {
+      background-position-y: bottom;
+      background-attachment: local; } }
   #background .contentSection {
     color: black;
     background-color: #ffffff8e;
@@ -265,7 +291,11 @@ a {
   margin-top: -100px; }
   #gameDev .EarlyCoffeeImg:hover {
     cursor: pointer; }
-
+  @media only screen and (max-width: 800px) {
+    #gameDev .EarlyCoffeeImg {
+      float: none;
+      margin-top: 0px;
+      width: 100%; } }
 #gameDev .EarlyCoffeeImg img {
   width: 180px;
   height: 180px;
@@ -302,7 +332,15 @@ a {
   #gameDev .rightInsert:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
-
+  @media only screen and (max-width: 800px) {
+    #gameDev .rightInsert {
+      float: none;
+      margin: 20px;
+      margin-left: -20px;
+      width: 100%;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border: none; } }
 #gameDev #Hermit {
   -webkit-box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
           box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
@@ -314,7 +352,9 @@ a {
   background-position-x: center;
   background-size: cover;
   background-attachment: fixed; }
-
+  @media only screen and (max-width: 800px) {
+    #gameDev #Hermit {
+      background-attachment: local; } }
 #gameDev #Hermit .HermitLogo {
   height: 100px;
   justify-content: center;
@@ -333,15 +373,21 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  text-shadow: 0px 0px 6px black; }
+  padding-bottom: 10px; }
 
 .HermitFrame {
   justify-content: center;
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px; }
+
+.HermitContent {
+  color: white;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 10px;
+  text-shadow: 0px 0px 6px black;
+  border-radius: 10px; }
 
 .copyright {
   color: white;
