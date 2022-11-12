@@ -147,7 +147,9 @@ a {
             box-shadow: 0px 0px 0px 4px #1e1e1e; }
     #navigation nav a:hover {
       color: #008cff; }
-
+    @media only screen and (max-width: 800px) {
+      #navigation nav a {
+        margin: 0px; } }
 .activateNavigation {
   position: fixed;
   z-index: 2;
@@ -156,7 +158,8 @@ a {
   background-color: #1e1e1e; }
   @media only screen and (max-width: 800px) {
     .activateNavigation {
-      right: 0px; } }
+      right: 0px;
+      height: 20px; } }
   .activateNavigation::before {
     content: '';
     background-color: #1e1e1e;
@@ -231,8 +234,8 @@ a {
   background-attachment: fixed;
   background-color: white;
   background-repeat: no-repeat;
-  -webkit-box-shadow: inset 0px 8px 10px -10px #1e1e1e;
-          box-shadow: inset 0px 8px 10px -10px #1e1e1e;
+  -webkit-box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -10px #1e1e1e;
+          box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -10px #1e1e1e;
   padding-top: 20px;
   padding-bottom: 40px; }
   @media only screen and (max-width: 800px) {
@@ -252,13 +255,41 @@ a {
 
 #science {
   background-color: white;
-  -webkit-box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
-          box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
+  -webkit-box-shadow: inset 0px -8px 10px -6px #1e1e1e;
+          box-shadow: inset 0px -8px 10px -6px #1e1e1e;
   padding-top: 20px;
   padding-bottom: 40px; }
   #science .contentSection {
     color: black; }
 
+.scienceWorkContent {
+  height: 400px;
+  color: black;
+  background-color: #ffffffaf;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 1px;
+  border-radius: 10px; }
+  .scienceWorkContent h3 {
+    color: #008cff; }
+
+#NIP {
+  background-image: url("../Images/Science/NIP/Background.png");
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media only screen and (max-width: 800px) {
+    #NIP {
+      background-position-y: bottom;
+      background-attachment: local; } }
 .paper {
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -277,7 +308,9 @@ a {
 
 #gameDev h1 {
   text-align: right; }
-
+  @media only screen and (max-width: 800px) {
+    #gameDev h1 {
+      text-align: left; } }
 #gameDev .EarlyCoffeeImg {
   width: 220px;
   height: 220px;
