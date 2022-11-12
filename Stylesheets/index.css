@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend&display=swap");
 .icon::before {
   display: inline-block;
   font-style: normal;
@@ -159,7 +160,8 @@ a {
   @media only screen and (max-width: 800px) {
     .activateNavigation {
       right: 0px;
-      height: 20px; } }
+      height: 30px;
+      padding-top: 5px; } }
   .activateNavigation::before {
     content: '';
     background-color: #1e1e1e;
@@ -207,12 +209,26 @@ a {
 
 .intro {
   font-size: 1.25em;
-  line-height: 1.4em;
-  font-weight: 500; }
+  line-height: 1.4em; }
 
 #aboutMeIntro {
   margin-top: 30px;
   margin-bottom: 30px; }
+
+.LearnMoreLink {
+  color: #1e1e1e;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #008cff;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: .8em !important; }
+  .LearnMoreLink:hover {
+    color: white; }
 
 #fullCV {
   color: #1e1e1e;
@@ -253,13 +269,49 @@ a {
     padding-top: 1px;
     border-radius: 10px; }
 
-#science {
+.rightInsert {
+  width: 300px;
+  float: right;
+  margin: 20px;
+  margin-right: -150px;
+  border-radius: 20px;
+  border: #1e1e1e solid 10px;
+  -webkit-box-shadow: 0px 8px 10px -6px #1e1e1e;
+          box-shadow: 0px 8px 10px -6px #1e1e1e;
+  -webkit-transition: 400ms -webkit-transform;
+  transition: 400ms -webkit-transform;
+  transition: 400ms transform;
+  transition: 400ms transform, 400ms -webkit-transform; }
+  .rightInsert:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  @media only screen and (max-width: 1100px) {
+    .rightInsert {
+      float: none;
+      max-width: 800px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border: none;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 800px) {
+    .rightInsert {
+      float: none;
+      margin: 20px;
+      margin-left: -20px;
+      width: 100%;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border: none; } }
+#science, #sciencePublication {
   background-color: white;
   -webkit-box-shadow: inset 0px -8px 10px -6px #1e1e1e;
           box-shadow: inset 0px -8px 10px -6px #1e1e1e;
   padding-top: 20px;
   padding-bottom: 40px; }
-  #science .contentSection {
+  #science .contentSection, #sciencePublication .contentSection {
     color: black; }
 
 .scienceWorkContent {
@@ -349,31 +401,6 @@ a {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-#gameDev .rightInsert {
-  width: 300px;
-  float: right;
-  margin: 20px;
-  margin-right: -150px;
-  border-radius: 20px;
-  border: #1e1e1e solid 10px;
-  -webkit-box-shadow: 0px 8px 10px -6px #1e1e1e;
-          box-shadow: 0px 8px 10px -6px #1e1e1e;
-  -webkit-transition: 400ms -webkit-transform;
-  transition: 400ms -webkit-transform;
-  transition: 400ms transform;
-  transition: 400ms transform, 400ms -webkit-transform; }
-  #gameDev .rightInsert:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
-  @media only screen and (max-width: 800px) {
-    #gameDev .rightInsert {
-      float: none;
-      margin: 20px;
-      margin-left: -20px;
-      width: 100%;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      border: none; } }
 #gameDev #Hermit {
   -webkit-box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
           box-shadow: inset 0px 8px 10px -6px #1e1e1e, inset 0px -8px 10px -6px #1e1e1e;
