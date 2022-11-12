@@ -113,7 +113,8 @@ a
     background-color: $primaryColor
     @media only screen and (max-width: 800px)
         right: 0px
-        height: 20px
+        height: 30px
+        padding-top: 5px
     // display: flex !important
     // justify-content: center !important
     &::before
@@ -166,7 +167,7 @@ a
 .intro
     font-size: 1.25em
     line-height: 1.4em
-    font-weight: 500
+    // font-weight: lighter
     // font-style: italic
 
 #aboutMe
@@ -174,6 +175,22 @@ a
 #aboutMeIntro
     margin-top: 30px
     margin-bottom: 30px
+
+.LearnMoreLink
+    color: $primaryColor
+    display: inline-block
+    text-decoration: none
+    background-color: $secondaryColor
+    padding-top: 1px
+    padding-bottom: 3px
+    padding-right: 8px
+    padding-left: 8px
+    border-radius: 8px
+    margin-top: 10px
+    font-size: .8em !important
+    &:hover
+        color: white
+
 
 #fullCV
     color: $primaryColor
@@ -215,7 +232,60 @@ a
         border-radius: 10px
 
 
-#science
+
+.rightInsert
+    width: 300px
+    float: right
+    margin: 20px
+    margin-right: -150px
+    border-radius: 20px
+
+    @media only screen and (max-width: 1100px)
+        float: none
+        max-width: 800px
+        box-shadow: none
+        border: none
+        display: block
+        margin: auto
+        margin-top: 20px
+        margin-bottom: 20px
+    
+    
+    @media only screen and (max-width: 800px)
+        float: none
+        margin: 20px
+        margin-left: -20px
+        width: 100%
+        box-shadow: none
+        border: none
+
+.leftInsert
+    width: 300px
+    float: left
+    margin: 20px
+    margin-left: -150px
+    border-radius: 20px
+
+    @media only screen and (max-width: 1100px)
+        float: none
+        max-width: 800px
+        box-shadow: none
+        border: none
+        display: block
+        margin: auto
+        margin-top: 20px
+        margin-bottom: 20px
+    
+    
+    @media only screen and (max-width: 800px)
+        float: none
+        margin: 20px
+        margin-left: -20px
+        width: 100%
+        box-shadow: none
+        border: none
+
+#science, #sciencePublication
     background-color: white
     // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
     box-shadow: inset 0px -8px 10px -6px $primaryColor
@@ -225,7 +295,6 @@ a
         color: black
 
 .scienceWorkContent
-    height: 400px
     color: black
     background-color: #ffffffaf
     backdrop-filter: blur(10px)
@@ -250,10 +319,40 @@ a
     // box-shadow: inset 0px 8px 10px -10px $primaryColor
     padding-top: 40px
     padding-bottom: 40px
+    // .scienceWorkContent
+    //     height: 1100px
 
     @media only screen and (max-width: 800px)
         background-position-y: bottom
         background-attachment: local
+
+.NIPInsert
+    padding: 10px
+    border-radius: 5px
+    background-color: white
+    overflow: hidden
+    img
+        width: 100%
+    span
+        display: block
+        padding-top: 5px
+        font-size: .8em
+        font-style: italic
+        text-align: justify
+
+
+#NIPMappedImg
+    width: 500px
+    margin-left: -300px
+#NIPErrorImg
+
+#NIPTimeSeriesImg
+    width: 500px
+    margin-left: -300px
+#NIPYearlyMaxImg
+
+#NIPReturnPeriodImg
+
 
 .papers
 .paper
@@ -310,26 +409,12 @@ a
     margin-top: 5px
     margin-bottom: 5px
 
-#gameDev .rightInsert
-    width: 300px
-    float: right
-    margin: 20px
-    margin-right: -150px
-    border-radius: 20px
+#chromaticImage
     border: $primaryColor solid 10px
     box-shadow: 0px 8px 10px -6px $primaryColor
     transition: 400ms transform
     &:hover
         transform: scale(1.1)
-    
-    
-    @media only screen and (max-width: 800px)
-        float: none
-        margin: 20px
-        margin-left: -20px
-        width: 100%
-        box-shadow: none
-        border: none
 
 #gameDev #Hermit
     box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
