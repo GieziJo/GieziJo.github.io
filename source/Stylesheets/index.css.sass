@@ -102,6 +102,8 @@ a
             box-shadow: 0px 0px 0px 4px $primaryColor
             &:hover
                 color: $secondaryColor
+            @media only screen and (max-width: 800px)
+                margin: 0px
 
 .activateNavigation
     position: fixed
@@ -111,6 +113,7 @@ a
     background-color: $primaryColor
     @media only screen and (max-width: 800px)
         right: 0px
+        height: 20px
     // display: flex !important
     // justify-content: center !important
     &::before
@@ -192,8 +195,8 @@ a
     background-attachment: fixed
     background-color: white
     background-repeat: no-repeat
-    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
-    box-shadow: inset 0px 8px 10px -10px $primaryColor
+    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -10px $primaryColor
+    // box-shadow: inset 0px 8px 10px -10px $primaryColor
     padding-top: 20px
     padding-bottom: 40px
 
@@ -214,13 +217,43 @@ a
 
 #science
     background-color: white
-    box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
-    // box-shadow: inset 0px -8px 10px -6px $primaryColor
+    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    box-shadow: inset 0px -8px 10px -6px $primaryColor
     padding-top: 20px
     padding-bottom: 40px
     .contentSection
         color: black
 
+.scienceWorkContent
+    height: 400px
+    color: black
+    background-color: #ffffffaf
+    backdrop-filter: blur(10px)
+    padding-left: 10px
+    padding-right: 10px
+    padding-bottom: 20px
+    padding-top: 1px
+    border-radius: 10px
+    h3
+        color: $secondaryColor
+
+
+#NIP
+    background-image: url("../Images/Science/NIP/Background.png")
+    background-position-y: center
+    background-position-x: center
+    background-size: cover
+    background-attachment: fixed
+    background-color: white
+    background-repeat: no-repeat
+    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    // box-shadow: inset 0px 8px 10px -10px $primaryColor
+    padding-top: 40px
+    padding-bottom: 40px
+
+    @media only screen and (max-width: 800px)
+        background-position-y: bottom
+        background-attachment: local
 
 .papers
 .paper
@@ -238,6 +271,8 @@ a
     font-weight: 300
 #gameDev h1
     text-align: right
+    @media only screen and (max-width: 800px)
+        text-align: left
 
 #gameDev .EarlyCoffeeImg
     width: 220px
