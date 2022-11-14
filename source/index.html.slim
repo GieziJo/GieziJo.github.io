@@ -132,6 +132,15 @@
                         br
                         | By combining historical MODIS satellite images with modern Sentinel-1 images, we produce reliable return period estimates.
                         br
+                        .NIPInsert#NIPModelImg
+                            img src="./Images/Science/NIP/FrameworkSchemaModel.png"
+                            span Schematic representation of the proposed framework. Based on a Sentinel-1 derived flood map, aggregated at 500 meter resolution, we train a fusion model which infers the fraction of flooded area in each pixel based on MODIS features.
+                        br
+                        .NIPInsert#NIModel.rightInsert
+                            img src="./Images/Science/NIP/modelSchema.png"
+                            span Details of Fusion model consisting in a series of Convolution Neural Networks (CNNs) applied to MODIS 8-days composite images, passed through a Long-Short Term Memory (LSTM) Layer, and later merged with the MODIS image at time t, to finally go through a last CNN.
+                        
+                        br
                         .NIPInsert#NIPMappedImg.leftInsert
                             img src="./Images/Science/NIP/Mapped.png"
                             span MODIS False Color Composit (FCC) along with Observed and Infered fraction of flooded area, result of deep learning fusion between MODIS and derived Sentinel-1 data, with error, for a chosen date selected out of the testing Set (Aug. 7 2018).
