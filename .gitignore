@@ -4,6 +4,7 @@
 *.scss.map
 
 /Build
+/.vscode
 
 .DS_Store
 **/.DS_Store

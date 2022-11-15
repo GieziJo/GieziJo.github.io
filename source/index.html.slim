@@ -3,10 +3,8 @@
 
 #aboutMe
 .headerImage
-    / img src="./Images/Header.jpg"
     .column
         .profileTitle
-            / h1 Dr. Jonathan <b>Giezendanner</b>
             | Dr. Jonathan <b>Giezendanner</b>
             br
             | PhD, Engineer
@@ -40,6 +38,17 @@
                 |  applied to 
                 b.highlightText Flood Mapping
                 |  and other environmental and societal challenges.
+                br
+                br
+                | Interested in technology, I am proficient in multiple programing languages (e.g. c#, Python, javascript) and frameworks, such as 
+                a href="https://www.fast.ai/" fast.ai
+                | , 
+                a href="https://pytorch.org/" PyTorch
+                | , and 
+                a href="https://code.earthengine.google.com/" Google Earth Engine
+                | , as well as 
+                a href="https://www.docker.com/" Docker
+                |  for deployment and HPCs for model training.
                 br
                 br
                 | Currently Postdoctoral Research Associate at the 
@@ -113,7 +122,7 @@
         .column
             .contentSection
                 h2 Current Work
-                | My current work focuses on developing novel Deep Learning soutions to Remote Sensing products in order to address environmental and societal challenges, mainly, but not exclusively, flood mapping.
+                | My current work focuses on developing novel Deep Learning solutions to Remote Sensing products in order to address environmental and societal challenges, mainly, but not exclusively, flood mapping.
                 br
                 br
                 | Presented here is my main work on flood mapping.
@@ -158,24 +167,24 @@
                         | For each time step, the n previous time steps are considered to make a prediction on the fraction of flooded area, leveraging the temporal dynamics of floods.
                         br
                         br
-                        | Each image first goes throuh a 
+                        | Each image first goes through a 
                         a target="_blank"  rel="noopener noreferrer" href="https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53" Convolutional Neural Network (CNN)
                         | , extracting the spatial information and compiling the multi bands information into a single value for each pixel.
                         br
                         br
                         | This generates a series of values for each pixel, which is then passed through a 
                         a target="_blank"  rel="noopener noreferrer" href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/" Long Short Term Memory (LSTM)
-                        |  network desgined to, through a series of gates, predict the probablity of flood to be present.
+                        |  network designed to, through a series of gates, predict the probability of flood to be present.
                         br
                         br
-                        | Finally, the output of the LSTM is combined with the MODIS composite image at time t and passed through a final CNN, generating a prediction for the fraction of flodded area for each pixel in the image.
+                        | Finally, the output of the LSTM is combined with the MODIS composite image at time t and passed through a final CNN, generating a prediction for the fraction of flooded area for each pixel in the image.
                         br
                         br
                         #NIPResult
                             .NIPInsert#NIPMappedImg
                                 a href='./Images/Science/NIP/Mapped.png' target="_blank" rel="noopener noreferrer"
                                     img src="./Images/Science/NIP/Mapped.png"
-                                span MODIS False Color Composit (FCC) along with Observed and Infered fraction of flooded area, result of deep learning fusion between MODIS and derived Sentinel-1 data, with error, for a chosen date selected out of the testing Set (Aug. 7 2018).
+                                span MODIS False Color Composite (FCC) along with Observed and Inferred fraction of flooded area, result of deep learning fusion between MODIS and derived Sentinel-1 data, with error, for a chosen date selected out of the testing Set (Aug. 7 2018).
 
                             .NIPInsert#NIPErrorImg
                                 a href='./Images/Science/NIP/ErrorDistribution.png' target="_blank" rel="noopener noreferrer"
@@ -188,7 +197,7 @@
                         .NIPInsert#NIPTimeSeriesImg.leftInsert
                             a href='./Images/Science/NIP/TimeSeries.png' target="_blank" rel="noopener noreferrer"
                                 img src="./Images/Science/NIP/TimeSeries.png"
-                            span Observed and Infered time series of fraction of flooded area for a single chip (see above) for the training and testing set. This model is used for the historical time series inference (see below).
+                            span Observed and Inferred time series of fraction of flooded area for a single chip (see above) for the training and testing set. This model is used for the historical time series inference (see below).
                         
                         
                         br
@@ -197,7 +206,7 @@
                         | For the testing, a single year (2018) is completely removed from the dataset.
                         br
                         br
-                        | The result of the developed fusion model is shown here for a single day (August 7 2018) on all available chips for this day, and as a time series for the highlighted chip for all dates this chip is present, as exmaples of inferense on the testing dataset.
+                        | The result of the developed fusion model is shown here for a single day (August 7 2018) on all available chips for this day, and as a time series for the highlighted chip for all dates this chip is present, as examples of inference on the testing dataset.
                         br
                         br
                         | The 
@@ -217,18 +226,18 @@
                             .NIPInsert#NIPYearlyMaxImg
                                 a href='./Images/Science/NIP/YearlyMaximum.png' target="_blank" rel="noopener noreferrer"
                                     img src="./Images/Science/NIP/YearlyMaximum.png"
-                                span Historical yearly maxima of fraction of flooded area infered from the trained model and run on the historical MODIS dataset. Comparison with the <a href="https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase" target="_blank" rel="noopener noreferrer"> Global Flood Database algorithm (GFD)</a>.
+                                span Historical yearly maxima of fraction of flooded area inferred from the trained model and run on the historical MODIS dataset. Comparison with the <a href="https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase" target="_blank" rel="noopener noreferrer"> Global Flood Database algorithm (GFD)</a>.
                             
 
                             .NIPInsert#NIPReturnPeriodImg
                                 a href='./Images/Science/NIP/ReturnPeriod.png' target="_blank" rel="noopener noreferrer"
                                     img src="./Images/Science/NIP/ReturnPeriod.png"
-                                span Return period estimtes based on the newly proposed MODIS Sentinel-1 fusion algorithm and on the GFD algorithm for the historical time series 2001-2020.
+                                span Return period estimates based on the newly proposed MODIS Sentinel-1 fusion algorithm and on the GFD algorithm for the historical time series 2001-2020.
                         
                         
                         br
 
-                        | The yearly maximum of the inferred hitorical data is compared to another MODIS algorithm, the <a href="https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase" target="_blank" rel="noopener noreferrer">Global Flood Database algorithm (GFD)</a> for the same area and period.
+                        | The yearly maximum of the inferred historical data is compared to another MODIS algorithm, the <a href="https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase" target="_blank" rel="noopener noreferrer">Global Flood Database algorithm (GFD)</a> for the same area and period.
                         br
                         br
                         | The developed methods shows similar trends with GFD, but a more realistic yearly maximum according to the time series analysis above.
@@ -279,15 +288,15 @@
                 br
                 | In our early days, we had the chance to get approached by an artist called 
                 a href="https://www.francoisburland.com/" target="_blank"  rel="noopener noreferrer" François Burland
-                | , who was interested in hiring us to create video games for his arts installation. Over the course of three years, under the umbreall of 
+                | , who was interested in hiring us to create video games for his arts installation. Over the course of three years, under the umbrella of 
                 a href='https://sharpedstonestudios.ch' target="_blank"  rel="noopener noreferrer" Sharped Stone Studios
-                |  , we participated in two different arts installation, each time trying to incorportate the essence of the artits' vision we were working with:
+                |  , we participated in two different arts installation, each time trying to incorporate the essence of the artists' vision we were working with:
                 ul
                     li
                         b [2017] SuperNova Martigny
-                        |  set in Martigny, a small town in the middle of the Alps in Switzerland, the exhibiton focused on cultural landmarks in and around Martigny, reinterpreted by various artists. We developed 
+                        |  set in Martigny, a small town in the middle of the Alps in Switzerland, the exhibition focused on cultural landmarks in and around Martigny, reinterpreted by various artists. We developed 
                         a href="https://itch.io/c/392769/supernova-martigny" target="_blank"  rel="noopener noreferrer" two games
-                        |  dedicated to the pizza places and roundabouts, both very abondant in Martigny.
+                        |  dedicated to the pizza places and roundabouts, both very abundant in Martigny.
                     li
                         b [2018 - 2019] Atomic Bazar Fribourg
                         | set in Fribourg, this exhibition was set around François' vision of the cold war. We developed 
@@ -306,7 +315,7 @@
                     li In 2020 we received the <b><a href="https://prohelvetia.ch" target="_blank"  rel="noopener noreferrer">ProHelvetia</a> pre-production grant</b> for our debut game 
                         <a href='https://Underwatertale.com' target="_blank"  rel="noopener noreferrer">Hermit: an Underwater Tale</a> (see below)
                         . This allowed us to hire <a href="https://www.maneingreen.com/" target="_blank"  rel="noopener noreferrer">Plume Oggier</a> for creating the game's music, <a href="https://www.linkedin.com/in/gwenbuord/" target="_blank"  rel="noopener noreferrer">Gwen Buord</a> to produce the game's sounds, as well as <a href="https://www.linkedin.com/in/jonathan-fellay-41ba01ba/" target="_blank"  rel="noopener noreferrer">Jonathan Fellay</a> for the narrative part of the adventure. <a href="https://earlycoffee.games/ChroMaticRacing/" target="_blank" rel="noopener noreferrer"><img class=rightInsert id=chromaticImage src="./Images/GameDev/chromatic.png"></a> 
-                    li In 2021 the museum <a href="https://www.fr.ch/mahf/espace-jean-tinguely-niki-de-saint-phalle" target="_blank" rel="noopener noreferrer">Espace Jean-Tinguely Nicki de Saint Phalle</a> contatracted us to create a unique art piece complementing their exhibition. We created <a href="https://earlycoffee.games/ChroMaticRacing/" target="_blank" rel="noopener noreferrer">Chromatic Racing</a>, an interactive piece, which invites the visitor to create a piece of art by playing the game. The piece is exposed form 2019 to 2024.
+                    li In 2021 the museum <a href="https://www.fr.ch/mahf/espace-jean-tinguely-niki-de-saint-phalle" target="_blank" rel="noopener noreferrer">Espace Jean-Tinguely Nicki de Saint Phalle</a> contracted us to create a unique art piece complementing their exhibition. We created <a href="https://earlycoffee.games/ChroMaticRacing/" target="_blank" rel="noopener noreferrer">Chromatic Racing</a>, an interactive piece, which invites the visitor to create a piece of art by playing the game. The piece is exposed form 2019 to 2024.
                     li In 2022 we were selected for the Swiss delegation to go to the <a href="https://gdconf.com/" target="_blank" rel="noopener noreferrer">Games Developers Conference (GDC)</a> in San-Francisco, where we showed Hermit.
                 | The main focus of the studio is currently to develop Hermit.
         #Hermit
