@@ -344,6 +344,47 @@ a {
     color: #008cff; }
   .scienceWorkContent h4 {
     color: #008cff; }
+  .scienceWorkContent details summary {
+    cursor: pointer;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto; }
+    .scienceWorkContent details summary::details-marker {
+      display: none; }
+    .scienceWorkContent details summary .summaryImage {
+      border-radius: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 400px;
+      overflow: hidden;
+      -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+      -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+              mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+              mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
+      .scienceWorkContent details summary .summaryImage img {
+        width: 100%;
+        overflow: hidden; }
+    .scienceWorkContent details summary .summaryText {
+      text-align: center;
+      width: 100%;
+      font-size: .8em;
+      -webkit-transition: 400ms all;
+      transition: 400ms all; }
+      .scienceWorkContent details summary .summaryText pre {
+        margin-top: 5px;
+        font-size: 1.7em; }
+    .scienceWorkContent details summary:hover .summaryText {
+      color: #008cff;
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+  .scienceWorkContent details[open] summary .summaryImage {
+    height: auto;
+    -webkit-mask-image: none;
+            mask-image: none; }
+  .scienceWorkContent details[open] summary .summaryText {
+    display: none; }
 
 #NIP {
   background-image: url("../Images/Science/NIP/Background.png");
