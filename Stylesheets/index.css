@@ -54,6 +54,10 @@
   font: var(--fa-font-solid);
   content: "\f19d"; }
 
+.icon-mastodon::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f4f6"; }
+
 html {
   scroll-behavior: smooth; }
 
