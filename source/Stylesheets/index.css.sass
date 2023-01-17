@@ -314,17 +314,28 @@ a
             cursor: pointer
             display: grid
             grid-template-columns: auto
-            .summaryImage
-                border-radius: 20px
+            .summary
                 margin-left: auto
                 margin-right: auto
                 width: 80%
                 height: 400px
                 overflow: hidden
                 mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))
-                img
+                .summaryImage
                     width: 100%
-                    overflow: hidden
+                    // height: 100%
+                    img
+                        border-radius: 20px
+                        width: 100%
+                        overflow: hidden
+                
+            span
+                display: block
+                padding-top: 5px
+                font-size: .8em
+                font-style: italic
+                text-align: justify
+            
             .summaryText
                 text-align: center
                 width: 100%
@@ -338,32 +349,28 @@ a
                     color: $secondaryColor
                     transform: scale(1.1)
         &[open] summary
-            .summaryImage
+            .summary
                 height: auto
                 mask-image: none
             .summaryText
                 display: none
 
+.BackgroundImageSource
+    color: black
+    margin-top: 20px
+    margin-bottom: -20px
 
-#NIP
-    background-image: url("../Images/Science/NIP/Background.png")
-    background-position-y: center
-    background-position-x: center
-    background-size: cover
-    background-attachment: fixed
-    background-color: white
-    background-repeat: no-repeat
-    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
-    // box-shadow: inset 0px 8px 10px -10px $primaryColor
-    padding-top: 40px
-    padding-bottom: 40px
-    // .scienceWorkContent
-    //     height: 1100px
+    text-align: justify
+    border-radius: 5px
+    padding: 5px
+    background-color: #ffffff8e
+    backdrop-filter: blur(10px)
+    font-style: italic
+    font-size: .8em
 
-    @media only screen and (max-width: 800px)
-        background-position-y: bottom
-        background-attachment: local
-.NIPInsert
+
+
+.ScienceInsert
     padding: 10px
     border-radius: 5px
     background-color: white
@@ -380,66 +387,19 @@ a
         font-style: italic
         text-align: justify
 
-@media only screen and (min-width: 1100px)
-    .NIPResultGrid
-        display: flex
-    #NIPMappedImg
-        width: 700px
-        // height: 300px
-        margin-left: -100px
-        display: flex
-        a
-            img
-                height: 100%
-                // width: auto
-        span
-            margin-left: 20px
-            margin-top: auto
-            margin-bottom: auto
-            // width: 1000px
-        // a
-        //     width: 300px
-        //     margin-left: auto
-        //     margin-right: auto
-        //     img
-        //         width: 300px
-        //         margin-left: auto
-        //         margin-right: auto
-    #NIPErrorImg
-        display: inline-block
-        width: 320px
-        margin-left: 50px
-    #NIPTimeSeriesImg
-        width: 500px
-        margin-left: -300px
-    
-    #NIPHistoricalTimeSeries
-        max-width: 600px
-        margin-left: auto
-        margin-right: auto
-    
-    #NIPYearlyMaxImg
-        width: 500px
-        margin-left: -70px
-        display: inline-block
-    #NIPReturnPeriodImg
-        display: inline-block
-        width: 350px
-        margin-left: 50px
-
-
-    #NIPResult
-        width: 900px
 
 @media only screen and (max-width: 1100px)
-    .NIPInsert
+    .ScienceInsert
         width: 90%
         margin-top: 10px
         margin-bottom: -10px
         margin-left: auto
         margin-right: auto
-    #NIPMappedImg, #NIPYearlyMaxImg
-        margin-bottom: 20px
+
+
+@import "partials/_nip"
+
+@import "partials/_pima"
 
 .papers
 .paper
