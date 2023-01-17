@@ -356,8 +356,7 @@ a {
     grid-template-columns: auto; }
     .scienceWorkContent details summary::details-marker {
       display: none; }
-    .scienceWorkContent details summary .summaryImage {
-      border-radius: 20px;
+    .scienceWorkContent details summary .summary {
       margin-left: auto;
       margin-right: auto;
       width: 80%;
@@ -367,9 +366,18 @@ a {
       -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
               mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
               mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
-      .scienceWorkContent details summary .summaryImage img {
-        width: 100%;
-        overflow: hidden; }
+      .scienceWorkContent details summary .summary .summaryImage {
+        width: 100%; }
+        .scienceWorkContent details summary .summary .summaryImage img {
+          border-radius: 20px;
+          width: 100%;
+          overflow: hidden; }
+    .scienceWorkContent details summary span {
+      display: block;
+      padding-top: 5px;
+      font-size: .8em;
+      font-style: italic;
+      text-align: justify; }
     .scienceWorkContent details summary .summaryText {
       text-align: center;
       width: 100%;
@@ -383,12 +391,54 @@ a {
       color: #008cff;
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
-  .scienceWorkContent details[open] summary .summaryImage {
+  .scienceWorkContent details[open] summary .summary {
     height: auto;
     -webkit-mask-image: none;
             mask-image: none; }
   .scienceWorkContent details[open] summary .summaryText {
     display: none; }
+
+.BackgroundImageSource {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  text-align: justify;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffffff8e;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-style: italic;
+  font-size: .8em; }
+
+.ScienceInsert {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  -webkit-transition: 400ms -webkit-transform;
+  transition: 400ms -webkit-transform;
+  transition: 400ms transform;
+  transition: 400ms transform, 400ms -webkit-transform; }
+  .ScienceInsert:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); }
+  .ScienceInsert img {
+    width: 100%; }
+  .ScienceInsert span {
+    display: block;
+    padding-top: 5px;
+    font-size: .8em;
+    font-style: italic;
+    text-align: justify; }
+
+@media only screen and (max-width: 1100px) {
+  .ScienceInsert {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 #NIP {
   background-image: url("../Images/Science/NIP/Background.png");
@@ -404,27 +454,6 @@ a {
     #NIP {
       background-position-y: bottom;
       background-attachment: local; } }
-.NIPInsert {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: white;
-  overflow: hidden;
-  -webkit-transition: 400ms -webkit-transform;
-  transition: 400ms -webkit-transform;
-  transition: 400ms transform;
-  transition: 400ms transform, 400ms -webkit-transform; }
-  .NIPInsert:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3); }
-  .NIPInsert img {
-    width: 100%; }
-  .NIPInsert span {
-    display: block;
-    padding-top: 5px;
-    font-size: .8em;
-    font-style: italic;
-    text-align: justify; }
-
 @media only screen and (min-width: 1100px) {
   .NIPResultGrid {
     display: flex; }
@@ -461,15 +490,23 @@ a {
     width: 900px; } }
 
 @media only screen and (max-width: 1100px) {
-  .NIPInsert {
-    width: 90%;
-    margin-top: 10px;
-    margin-bottom: -10px;
-    margin-left: auto;
-    margin-right: auto; }
   #NIPMappedImg, #NIPYearlyMaxImg {
     margin-bottom: 20px; } }
 
+#Pima {
+  background-image: url("../Images/Science/Pima/PlanetImage.png");
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media only screen and (max-width: 800px) {
+    #Pima {
+      background-position-y: bottom;
+      background-attachment: local; } }
 .paper {
   margin-top: 10px;
   margin-bottom: 10px; }
