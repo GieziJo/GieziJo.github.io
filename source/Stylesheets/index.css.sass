@@ -344,6 +344,41 @@ a
             .summaryText
                 display: none
 
+.BackgroundImageSource
+    margin-top: 20px
+    margin-bottom: -20px
+    margin-right: 10px
+    text-align: right
+    bottom: 5px
+    right: 5px
+
+
+
+.ScienceInsert
+    padding: 10px
+    border-radius: 5px
+    background-color: white
+    overflow: hidden
+    transition: 400ms transform
+    &:hover
+        transform: scale(1.3)
+    img
+        width: 100%
+    span
+        display: block
+        padding-top: 5px
+        font-size: .8em
+        font-style: italic
+        text-align: justify
+
+
+@media only screen and (max-width: 1100px)
+    .ScienceInsert
+        width: 90%
+        margin-top: 10px
+        margin-bottom: -10px
+        margin-left: auto
+        margin-right: auto
 
 #NIP
     background-image: url("../Images/Science/NIP/Background.png")
@@ -363,22 +398,6 @@ a
     @media only screen and (max-width: 800px)
         background-position-y: bottom
         background-attachment: local
-.NIPInsert
-    padding: 10px
-    border-radius: 5px
-    background-color: white
-    overflow: hidden
-    transition: 400ms transform
-    &:hover
-        transform: scale(1.3)
-    img
-        width: 100%
-    span
-        display: block
-        padding-top: 5px
-        font-size: .8em
-        font-style: italic
-        text-align: justify
 
 @media only screen and (min-width: 1100px)
     .NIPResultGrid
@@ -432,14 +451,30 @@ a
         width: 900px
 
 @media only screen and (max-width: 1100px)
-    .NIPInsert
-        width: 90%
-        margin-top: 10px
-        margin-bottom: -10px
-        margin-left: auto
-        margin-right: auto
     #NIPMappedImg, #NIPYearlyMaxImg
         margin-bottom: 20px
+
+
+
+
+#Pima
+    background-image: url("../Images/Science/Pima/PlanetImage.png")
+    background-position-y: center
+    background-position-x: center
+    background-size: cover
+    background-attachment: fixed
+    background-color: white
+    background-repeat: no-repeat
+    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    // box-shadow: inset 0px 8px 10px -10px $primaryColor
+    padding-top: 40px
+    padding-bottom: 40px
+    // .scienceWorkContent
+    //     height: 1100px
+
+    @media only screen and (max-width: 800px)
+        background-position-y: bottom
+        background-attachment: local
 
 .papers
 .paper

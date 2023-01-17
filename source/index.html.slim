@@ -157,13 +157,13 @@
                                 | By combining historical MODIS satellite images with modern Sentinel-1 images, we produce reliable return period estimates.
                                 br
                                 br
-                                .NIPInsert#NIPModelImg
+                                .ScienceInsert#NIPModelImg
                                     a href='./Images/Science/NIP/FrameworkSchemaModel.png' target="_blank" rel="noopener noreferrer"
                                         img src="./Images/Science/NIP/FrameworkSchemaModel.png"
                                     span Schematic representation of the proposed framework. Based on a Sentinel-1 derived flood map, aggregated at 500 meter resolution, we train a fusion model which infers the fraction of flooded area in each pixel based on MODIS features.
                                 br
                                 | The proposed framework takes advantage of the ability of radar to "see" water even through clouds, one of the major challenges of flood mapping.
-                                .NIPInsert#NIModel.rightInsert
+                                .ScienceInsert#NIModel.rightInsert
                                     a href='./Images/Science/NIP/modelSchema.png' target="_blank" rel="noopener noreferrer"
                                         img src="./Images/Science/NIP/modelSchema.png"
                                     span Details of Fusion model consisting in a series of Convolutional Neural Networks (CNNs) applied to MODIS 8-days composite images, passed through a Long Short Term Memory (LSTM) network, and later merged with the MODIS image at time t, to finally go through a last CNN.
@@ -196,12 +196,12 @@
                                 br
                                 br
                                 #NIPResult.NIPResultGrid
-                                    .NIPInsert#NIPMappedImg
+                                    .ScienceInsert#NIPMappedImg
                                         a href='./Images/Science/NIP/Mapped.png' target="_blank" rel="noopener noreferrer"
                                             img src="./Images/Science/NIP/Mapped.png"
                                         span Observed and Inferred fraction of flooded area, result of deep learning fusion between MODIS and derived Sentinel-1 data, along with error (difference) and MODIS False Color Composite (FCC), for a chosen date selected out of the testing Set (Mai. 5 2020).
 
-                                    .NIPInsert#NIPErrorImg
+                                    .ScienceInsert#NIPErrorImg
                                         a href='./Images/Science/NIP/ErrorDistribution.png' target="_blank" rel="noopener noreferrer"
                                             img src="./Images/Science/NIP/ErrorDistribution.png"
                                         span Error distribution between the observation (Sentinel-1 algorithm) and Model for the full testing set.
@@ -209,7 +209,7 @@
                                 
                                 br
 
-                                .NIPInsert#NIPTimeSeriesImg.leftInsert
+                                .ScienceInsert#NIPTimeSeriesImg.leftInsert
                                     a href='./Images/Science/NIP/TimeSeries.png' target="_blank" rel="noopener noreferrer"
                                         img src="./Images/Science/NIP/TimeSeries.png"
                                     span Observed and Inferred time series of fraction of flooded area for all of Bangladesh for the training and testing set. This model is used for the historical time series inference (see below).
@@ -232,7 +232,7 @@
                                 | The time series shows that the low water values during the dry season are well modeled, and the peaks during the monsoon and irrigation season correctly reproduced.
                                 br
                                 br
-                                .NIPInsert#NIPHistoricalTimeSeries
+                                .ScienceInsert#NIPHistoricalTimeSeries
                                     a href='./Images/Science/NIP/HistoricalTimeSeries.mp4' target="_blank" rel="noopener noreferrer"
                                         video width="100%" autoplay=true loop=true
                                             <source src="./Images/Science/NIP/HistoricalTimeSeries.mp4" type="video/mp4">
@@ -245,13 +245,13 @@
                                 br
                                 
                                 #NIPResult
-                                    .NIPInsert#NIPYearlyMaxImg
+                                    .ScienceInsert#NIPYearlyMaxImg
                                         a href='./Images/Science/NIP/YearlyMaximum.png' target="_blank" rel="noopener noreferrer"
                                             img src="./Images/Science/NIP/YearlyMaximum.png"
                                         span Historical yearly maxima of fraction of flooded area inferred from the trained model and run on the historical MODIS dataset. Comparison with the <a href="https://github.com/cloudtostreet/MODIS_GlobalFloodDatabase" target="_blank" rel="noopener noreferrer"> Global Flood Database algorithm (GFD)</a> and the <a href="http://www.ffwc.gov.bd/" target='_blank' rel="noopener noreferrer">Bangladesh Flood Forecasting and Warning Center (FFWC)</a> generated maps.
                                     
 
-                                    .NIPInsert#NIPReturnPeriodImg
+                                    .ScienceInsert#NIPReturnPeriodImg
                                         a href='./Images/Science/NIP/ReturnPeriod.png' target="_blank" rel="noopener noreferrer"
                                             img src="./Images/Science/NIP/ReturnPeriod.png"
                                         span Return period estimates based on the newly proposed MODIS Sentinel-1 fusion algorithm and on the GFD algorithm for the historical time series 2001-2021.
@@ -284,6 +284,23 @@
                             | [Talk] 
                         a href='./Images/Science/NIP/Presentations/ESA_Living_Planet_JonathanGiezendanner.pdf' target="_blank" rel="noopener noreferrer" <b>ESA Living Planet Symposium</b>, <i>Mai. 2022</i> - Creating historical time series of satellite observed inundation for risk transfer applications in Bangladesh
 
+            .BackgroundImageSource
+                | Background image: Sentinel-2 FCC over Sylhet, Bangladesh (May 2022)
+        #Pima
+            .column
+                .contentSection
+                    .scienceWorkContent
+                        h3 Flood Mapping of Monsoon events over Pima County, Az, USA
+                        | adsf
+                        
+
+                        .ScienceInsert.leftInsert
+                            a href='https://jgiezendanner.users.earthengine.app/view/pimacountyhourlyrainfallmonitoringnldas' target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/Pima/RainFallApp.png"
+                            span Observed and Inferred time series of fraction of flooded area for a single chip (see above) for the training and testing set. This model is used for the historical time series inference (see below).
+            .BackgroundImageSource
+                | Background image: PlanetScope multi-date NIR composite over West Tucson, Az, USA (July 31 and August 1st 2022)
+                            
     / #sciencePast
     /     .column
     /         .contentSection
