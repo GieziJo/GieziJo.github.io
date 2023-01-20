@@ -132,12 +132,14 @@
         
         = partial "contentPartials/science/nip"
         
-        = partial "contentPartials/science/pima"
+        / = partial "contentPartials/science/pima"
                             
-    / #sciencePast
-    /     .column
-    /         .contentSection
-    /             h2 Past Work
+    #sciencePast
+        .column
+            .contentSection
+                h2 Past Work
+
+        = partial "contentPartials/science/gpnp"
 
     #publications
         .column
