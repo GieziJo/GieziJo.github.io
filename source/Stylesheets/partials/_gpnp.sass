@@ -1,0 +1,79 @@
+#GPNP
+    background-image: url("../Images/Science/GPNP/Background.png")
+    background-position-y: center
+    background-position-x: center
+    background-size: cover
+    background-attachment: fixed
+    background-color: white
+    background-repeat: no-repeat
+    // box-shadow: inset 0px 8px 10px -6px $primaryColor, inset 0px -8px 10px -6px $primaryColor
+    // box-shadow: inset 0px 8px 10px -10px $primaryColor
+    padding-top: 40px
+    padding-bottom: 40px
+    // .scienceWorkContent
+    //     height: 1100px
+
+    @media only screen and (max-width: 800px)
+        background-position-y: center
+        background-position-x: left
+        background-attachment: local
+
+    .summary
+        width: 100%
+    #GPNPAlgoHolder
+        width: 95%
+        transition: none !important
+        &:hover
+            transform: none !important
+    
+    .GPNPAlgo
+        position: relative
+        
+    
+    .GPNPAlgo1, .GPNPAlgo2, .GPNPAlgo3
+        display: block
+        position: absolute
+    
+    .GPNPAlgo1:hover ~ #GPNPAlgoImage img
+        content: url("../Images/Science/GPNP/Algo/1.png")
+
+
+    .GPNPAlgo2:hover ~ #GPNPAlgoImage img
+        content: url("../Images/Science/GPNP/Algo/2.png")
+    
+    .GPNPAlgo3:hover~ #GPNPAlgoImage img
+        content: url("../Images/Science/GPNP/Algo/3.png")
+
+
+
+
+#GPNPSchema
+    width: 60%
+
+#GPNPResultHolder
+    width: 97.5%
+
+#GPNPResult
+    display: grid
+    column-gap: 20px
+    grid-template-columns: auto auto
+
+@media only screen and (max-width: 800px)
+    #GPNPResult
+        column-gap: 0px
+        grid-template-columns: auto
+        
+
+#GPNPMetapopulation
+    width: 65%   
+#GPNPEOData
+    width: 60%
+
+@media only screen and (max-width: 1000px)
+    #GPNPspacing
+        display: none
+
+    #GPNPSchema, #GPNPResultHolder, #GPNPResult, #GPNPMetapopulation, #GPNPEOData
+        width: 95%
+        // margin-left: -10px
+    
