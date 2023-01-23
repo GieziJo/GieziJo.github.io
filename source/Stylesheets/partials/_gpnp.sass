@@ -47,33 +47,33 @@
 
 
 
-#GPNPSchema
-    width: 60%
+    #GPNPSchema
+        width: 60%
 
-#GPNPResultHolder
-    width: 97.5%
+    #GPNPResultHolder
+        width: 97.5%
 
-#GPNPResult
-    display: grid
-    column-gap: 20px
-    grid-template-columns: auto auto
-
-@media only screen and (max-width: 800px)
     #GPNPResult
-        column-gap: 0px
-        grid-template-columns: auto
+        display: grid
+        column-gap: 20px
+        grid-template-columns: auto auto
+
+    @media only screen and (max-width: 800px)
+        #GPNPResult
+            column-gap: 0px
+            grid-template-columns: auto
+            
+
+    #GPNPMetapopulation
+        width: 65%   
+    #GPNPEOData
+        width: 60%
+
+    @media only screen and (max-width: 1000px)
+        #GPNPspacing
+            display: none
+
+        #GPNPSchema, #GPNPResultHolder, #GPNPResult, #GPNPMetapopulation, #GPNPEOData
+            width: 95%
+            // margin-left: -10px
         
-
-#GPNPMetapopulation
-    width: 65%   
-#GPNPEOData
-    width: 60%
-
-@media only screen and (max-width: 1000px)
-    #GPNPspacing
-        display: none
-
-    #GPNPSchema, #GPNPResultHolder, #GPNPResult, #GPNPMetapopulation, #GPNPEOData
-        width: 95%
-        // margin-left: -10px
-    
