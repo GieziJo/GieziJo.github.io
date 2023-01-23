@@ -3,13 +3,25 @@
         .contentSection
             .scienceWorkContent
                 h3 Historical Mapping of Bangladesh Floods - MODIS / Sentinel-1 DL Fusion
+                .scienceCollaborators
+                    | Collaborators: 
+                    = collaborator('rMukherjee')
+                    = collaborator('mPurri')
+                    = collaborator('mThomas')
+                    = collaborator('mMauerman')
+                    = collaborator('uLall')
+                    = collaborator('aBhuyan')
+                    = collaborator('aIslam')
+                    .scienceLastCollaborator
+                        = collaborator('bTellman')
+
                 | Economic impacts of floods push people into poverty and cause setbacks to development as government budgets are stretched and people without financial protection are forced to sell assets.
                 br
                 br
                 | Accurate return period estimates of flood events are paramount to develop robust insurance products.
                 br
                 br
-                | We here apply a deep learning algorith (combined Long-Short-Term-Memory (LSTM) and Convolutional Neural Network (CNNs)) approach.
+                | We here apply a deep learning algorithm (combined Long-Short-Term-Memory (LSTM) and Convolutional Neural Network (CNNs)) approach.
                 br
                 br
                 details
@@ -96,7 +108,7 @@
                         br
                         | The 
                             var R<sup>2</sup>
-                        |  of 0.66 shows a good agreement between the observed and modeled data.
+                        |  of 0.66 shows a good agreement between the observed and modelled data.
                         br
                         br
                         | The time series shows that the low water values during the dry season are well modeled, and the peaks during the monsoon and irrigation season correctly reproduced.

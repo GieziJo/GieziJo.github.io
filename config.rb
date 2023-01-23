@@ -39,3 +39,10 @@ config[:css_dir] = "Stylesheets"
 #   # activate :minify_css
 #   # activate :minify_javascript
 # end
+
+helpers do
+  def collaborator(name)
+    collData = data.collaborators[name]
+    "<a target='_blank'  rel='noopener noreferrer' href='#{collData.website}'>#{collData.firstName} #{collData.lastName}</a>"
+  end
+end

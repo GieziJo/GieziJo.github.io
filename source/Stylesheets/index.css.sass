@@ -396,6 +396,18 @@ a
         margin-left: auto
         margin-right: auto
 
+.scienceCollaborators
+    padding-bottom: 10px
+    font-size: .8em
+    a
+        display: inline-block
+        padding-right: 5px
+        &:not(:last-child):after
+            content: ", "
+
+.scienceLastCollaborator
+    display: inline-block
+    font-weight: bold
 
 @import "partials/_nip"
 

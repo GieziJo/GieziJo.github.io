@@ -4,13 +4,19 @@
         .contentSection
             .scienceWorkContent
                 h3 Flood Mapping of Monsoon events over Pima County, Az, USA
+                .scienceCollaborators
+                    | Collaborators: 
+                    = collaborator('rMukherjee')
+                    = collaborator('hFriedrich')
+                    .scienceLastCollaborator
+                        = collaborator('bTellman')
                 | It floods in the desert! The North American Monsoon brings intense storms and sometimes flash floods each summer. 2021 was the third wettest on record in Tucson (12.79 inches).
                 br
                 br
                 | Understanding where and when these floods happen can be challenging, and requires large scale monitoring.
                 br
                 br
-                | Can sattelite images provide insights into the flood extents and water pathways? Given the revisiting periods of sattelites and large cloud cover during and around monsoon flood events, using these images can be challenging.
+                | Can satellite images provide insights into the flood extents and water pathways? Given the revisiting periods of satellites and large cloud cover during and around monsoon flood events, using these images can be challenging.
                 br
                 br
                 details open=true
@@ -33,7 +39,7 @@
                         .ScienceInsert.leftInsert
                             a href='https://jgiezendanner.users.earthengine.app/view/pimacountyhourlyrainfallmonitoringnldas' target="_blank" rel="noopener noreferrer"
                                 img src="./Images/Science/Pima/RainFallApp.png"
-                            span Observed and Inferred time series of fraction of flooded area for a single chip (see above) for the training and testing set. This model is used for the historical time series inference (see below).
+                            span Google Earth Engine applet developed to visualise the daily precipitation (based on the North American Land Data Assimilation System (NLDAS)) over the different watersheds. 
                 
                 br
                 br
