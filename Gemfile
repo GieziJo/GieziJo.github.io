@@ -8,7 +8,7 @@ gem 'middleman', '~> 4.2'
 gem 'eventmachine', '~> 1.2.7', platforms: [:ruby]
 gem 'middleman-autoprefixer', '~> 3.0'
 # gem 'middleman-blog'
-# gem 'nokogiri'
+gem 'nokogiri'
 gem 'middleman-livereload'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
