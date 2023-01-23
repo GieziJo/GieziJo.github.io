@@ -454,6 +454,9 @@ a {
     #NIP {
       background-position-y: bottom;
       background-attachment: local; } }
+  #NIP .summary {
+    width: 60%; }
+
 @media only screen and (min-width: 1100px) {
   .NIPResultGrid {
     display: flex; }
@@ -507,6 +510,69 @@ a {
     #Pima {
       background-position-y: bottom;
       background-attachment: local; } }
+#GPNP {
+  background-image: url("../Images/Science/GPNP/Background.png");
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media only screen and (max-width: 800px) {
+    #GPNP {
+      background-position-y: center;
+      background-position-x: left;
+      background-attachment: local; } }
+  #GPNP .summary {
+    width: 100%; }
+  #GPNP #GPNPAlgoHolder {
+    width: 95%;
+    -webkit-transition: none !important;
+    transition: none !important; }
+    #GPNP #GPNPAlgoHolder:hover {
+      -webkit-transform: none !important;
+              transform: none !important; }
+  #GPNP .GPNPAlgo {
+    position: relative; }
+  #GPNP .GPNPAlgo1, #GPNP .GPNPAlgo2, #GPNP .GPNPAlgo3 {
+    display: block;
+    position: absolute; }
+  #GPNP .GPNPAlgo1:hover ~ #GPNPAlgoImage img {
+    content: url("../Images/Science/GPNP/Algo/1.png"); }
+  #GPNP .GPNPAlgo2:hover ~ #GPNPAlgoImage img {
+    content: url("../Images/Science/GPNP/Algo/2.png"); }
+  #GPNP .GPNPAlgo3:hover ~ #GPNPAlgoImage img {
+    content: url("../Images/Science/GPNP/Algo/3.png"); }
+  #GPNP #GPNPSchema {
+    width: 60%; }
+  #GPNP #GPNPResultHolder {
+    width: 97.5%; }
+  #GPNP #GPNPResult {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto; }
+  @media only screen and (max-width: 800px) {
+    #GPNP #GPNPResult {
+      -webkit-column-gap: 0px;
+         -moz-column-gap: 0px;
+              column-gap: 0px;
+      -ms-grid-columns: auto;
+      grid-template-columns: auto; } }
+  #GPNP #GPNPMetapopulation {
+    width: 65%; }
+  #GPNP #GPNPEOData {
+    width: 60%; }
+  @media only screen and (max-width: 1000px) {
+    #GPNP #GPNPspacing {
+      display: none; }
+    #GPNP #GPNPSchema, #GPNP #GPNPResultHolder, #GPNP #GPNPResult, #GPNP #GPNPMetapopulation, #GPNP #GPNPEOData {
+      width: 95%; } }
 .paper {
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -631,6 +697,6 @@ a {
   font-size: 10px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 0px; }
+  margin-bottom: 10px; }
   .copyright a {
     text-decoration: underline; }
