@@ -6,15 +6,15 @@ source 'https://rubygems.org'
 # Middleman Gems
 gem 'middleman', '~> 4.2'
 gem 'eventmachine', '~> 1.2.7', platforms: [:ruby]
-gem 'middleman-autoprefixer'#, '~> 3.0'
+gem 'middleman-autoprefixer', '~> 3.0'
 # gem 'middleman-blog'
 gem 'nokogiri'
 gem 'middleman-livereload'
 
-# gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 # For feed.xml.builder
-# gem 'builder', '~> 3.0'
+gem 'builder', '~> 3.0'
 
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
