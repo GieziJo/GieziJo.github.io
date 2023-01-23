@@ -7,10 +7,10 @@
                 | Mountain areas represent a challenging environment to efficiently monitor species over extended periods of time in a large area.
                 br
                 br
-                | To make informed decisions, park managers in protected areas may require knowledge about the health, presence and dynamics of species in these areas.
+                | To make informed decisions, park managers in protected areas may require knowledge about the health, presence, and dynamics of species in these areas.
                 br
                 br
-                | These requirements may need to gain further information beyond the sampled data, extrapolating the data beyond the observed and integrating population dynamics for near-term forecasting of species presence.
+                | To accomplish this, they may need to gain further information beyond the sampled data, extrapolating the data beyond the observed and integrating population dynamics for near-term forecasting of species presence.
                 br
                 br
                 details
@@ -56,16 +56,16 @@
                         | A metapopulation is commonly described as a population of populations of a single species , i.e. a population comprised of multiple subpopulations, called local populations inhabiting the same landscape, but in distinct geographical locations. The metapopulation concept is an abstraction of the concept of population, where an ensemble of interacting individuals is considered to a higher level, and where interacting subpopulations are considered.
                         br
                         br
-                        | The specific metapopuloation model used here is called Spatially-Explicit Stochastic Patch Occupancy Model (SPOM).
+                        | The specific metapopulation model used here is called Spatially-Explicit Stochastic Patch Occupancy Model (SPOM).
                         br
                         br
-                        | Building on a grid with N cells, SPOM computes a possible distribution of occupied cells at every simulation time t by considering extinction and colonization processes, whose rates depend on the species properties and on the landscape features. A binary state variable w<sub>i</sub> (t) is set to 1 when the cell i is occupied and 0 when empty (i = 1, ... , N).
+                        | Building on a grid with N cells, SPOM computes a possible distribution of occupied cells at every simulation time t by considering extinction and colonisation processes, whose rates depend on the species properties and on the landscape features. A binary state variable w<sub>i</sub> (t) is set to 1 when the cell i is occupied and 0 when empty (i = 1, ... , N).
                         br
                         br
-                        | Starting from a given initial distribution of occupied cells, at each time step, the model allows unoccupied cells to be colonized by surrounding occupied cells with a certain probablity.
+                        | Starting from a given initial distribution of occupied cells, at each time step, the model allows unoccupied cells to be colonised by surrounding occupied cells with a certain probablity.
                         br
                         br
-                        | Then, the cell becomes occupied at time t + ∆t depending on a random sample from a Bernoulli distribution. Similarly, species in occupied cells can go extinct with a certain probability. SPOM works as a Markov chain, where, for each cell, the probabilities of colonization and extinction events are modelled depending on presence and conditions.
+                        | Then, the cell becomes occupied at time t + ∆t depending on a random sample from a Bernoulli distribution. Similarly, species in occupied cells can go extinct with a certain probability. SPOM works as a Markov chain, where, for each cell, the probabilities of colonisation and extinction events are modelled depending on presence and conditions.
                         br
                         br
 
@@ -73,13 +73,13 @@
                             a href='./Images/Science/GPNP/EOData.webm' target="_blank" rel="noopener noreferrer"
                                 video width="100%" autoplay=true loop=true
                                     <source src="./Images/Science/GPNP/EOData.webm" type="video/webm">
-                            span Static and dynamic Earth Observation data used in the study to characterize the niche of the species in each pixel.
+                            span Static and dynamic Earth Observation data used in the study to characterise the niche of the species in each pixel.
                         br
                         br
-                        | In the context of this work, the colonisation and extinction probabilities are based on using Earth Observation data to carachterise the niche of the species. 
+                        | In the context of this work, the colonisation and extinction probabilities are based on using Earth Observation data to characterise the niche of the species. 
                         br
                         br
-                        | The factors are combined in a non-liear logistic function to best describe the niche.
+                        | The factors are combined in a non-linear logistic function to best describe the niche.
                         br
                         br
                         | The different EO factors are selected to best describe the environmental conditions relevant for the modeled species.
@@ -95,7 +95,7 @@
                             br
                         | The developed framework proposes a three step algorithm:
                         br
-                        | 1. Estimation of the initial presence of the species in the landscape though a 
+                        | 1. Estimation of the initial presence of the species in the landscape through a 
                         a href="https://en.wikipedia.org/wiki/Species_distribution_modelling" target="_blank" rel="noopener noreferrer" Species Distribution Model (SDM)
                         | ; 
                         br
@@ -116,7 +116,7 @@
                             span <tt>[Hover over the different parts of the algorithm for more details]</tt>Details of the developed algorithm.
                         br
                         br
-                        | The iterated filterting algorithm allow to accomodate partially observed data in time, by only updating the calibration at times where the data is available.
+                        | The iterated filtering algorithm allows data only partially observed in time to be accommodated by solely updating the calibration at time steps where the data is available.
 
                         br
                         br
