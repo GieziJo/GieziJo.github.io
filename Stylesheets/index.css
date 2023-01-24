@@ -448,10 +448,12 @@ a {
     padding-right: 5px; }
     .scienceCollaborators a:not(:last-child):after {
       content: ", "; }
+    .scienceCollaborators a:last-child {
+      font-weight: bold; }
 
-.scienceLastCollaborator {
-  display: inline-block;
-  font-weight: bold; }
+@media only screen and (max-width: 1000px) {
+  #ScienceSpacing {
+    display: none; } }
 
 #NIP {
   background-image: url("../Images/Science/NIP/Background.png");
@@ -523,6 +525,9 @@ a {
     #Pima {
       background-position-y: bottom;
       background-attachment: local; } }
+  #Pima #PimaGEE {
+    width: 70%; }
+
 #GPNP {
   background-image: url("../Images/Science/GPNP/Background.png");
   background-position-y: center;
@@ -582,10 +587,28 @@ a {
   #GPNP #GPNPEOData {
     width: 60%; }
   @media only screen and (max-width: 1000px) {
-    #GPNP #GPNPspacing {
-      display: none; }
     #GPNP #GPNPSchema, #GPNP #GPNPResultHolder, #GPNP #GPNPResult, #GPNP #GPNPMetapopulation, #GPNP #GPNPEOData {
       width: 95%; } }
+#CSDAP {
+  background-image: url("../Images/Science/CSDAP/Background.png");
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  @media only screen and (max-width: 800px) {
+    #CSDAP {
+      background-position-y: bottom;
+      background-attachment: local; } }
+  #CSDAP #CSDAPSampling {
+    width: 90%;
+    margin: auto; }
+  #CSDAP #CSDAPLabelImage {
+    width: 50%; }
+
 .paper {
   margin-top: 10px;
   margin-bottom: 10px; }
