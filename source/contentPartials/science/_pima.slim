@@ -8,8 +8,8 @@
                     | Collaborators: 
                     = collaborator('rMukherjee')
                     = collaborator('hFriedrich')
-                    .scienceLastCollaborator
-                        = collaborator('bTellman')
+                    = collaborator('bTellman')
+                
                 | It floods in the desert! The North American Monsoon brings intense storms and sometimes flash floods each summer. 2021 was the third wettest on record in Tucson (12.79 inches).
                 br
                 br
@@ -19,7 +19,7 @@
                 | Can satellite images provide insights into the flood extents and water pathways? Given the revisiting periods of satellites and large cloud cover during and around monsoon flood events, using these images can be challenging.
                 br
                 br
-                details open=true
+                details
                     summary
                         .summary
                             .summaryImage
@@ -34,14 +34,50 @@
                     div
                         br
                         br
-                        | By combining historical MODIS satellite images with modern Sentinel-1 images, we produce reliable return period estimates.
+                        | This project is done in collaboration with the Pima County Government, where we are currently assessing the utility of satellite imagery to detect floods in the desert, in particular the advantage of high frequency PlanetScope commercial data.
+                        
                         br
-                        .ScienceInsert.leftInsert
+                        .ScienceInsert.leftInsert#PimaGEE
                             a href='https://jgiezendanner.users.earthengine.app/view/pimacountyhourlyrainfallmonitoringnldas' target="_blank" rel="noopener noreferrer"
                                 img src="./Images/Science/Pima/RainFallApp.png"
                             span Google Earth Engine applet developed to visualise the daily precipitation (based on the North American Land Data Assimilation System (NLDAS)) over the different watersheds. 
-                
-                br
+                        br
+                        br
+                        | Flash floods in the desert during the monsoon season recess rapidly, and capturing them with satellite images appears difficult.
+                        br
+                        br
+                        a href="https://www.planet.com/" target="_blank" rel="noopener noreferrer" PlanetScope
+                        |  images, with their near global and near daily images, provide an interesting product to detect the differences between consecutive images, as often only wet soil or sand remains as witness of the flood itself.
+                        br
+                        br
+                        | In this context, I have developed a Google Earth Engine Applet to visualize the daily precipitation over Pima county, in an effort to aid the selection of flood events to be modelled, and hint towards their location in space (c.f. figure).
+                        br
+                        br
+                        | Additionally, for another project, in collaboration with a PhD student, #{collaborator('aSaunders')}, we developed a tool to map the available satellite images around a specific date. This is particularly useful here as it allows us to select flood events where satellite imagery has a potential (c.f. figure).
+                        br
+                        br
+                        span#ScienceSpacing
+                            br
+                            br
+                            br
+                        .ScienceInsert
+                            a href='./Images/Science/Pima/SatImageAvailability.png' target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/Pima/SatImageAvailability.png"
+                            span Satellite image availability around a specified date for a given RoI, automatically retrieved. Built on Google Earth Engine and PlanetScope API.
+                        br
+                        br
+                        | I have contributed to hand labeling flood events and developed machine learning algorithms to classify the wet sand we observed.
+                        br
+                        br
+                        | One of the promising methods we developed is based on selecting two consecutive PlanetScope images, one on the morning of the event, and one on the day after.
+                        br
+                        br
+                        .ScienceInsert
+                            a href='./Images/Science/Pima/PimaAlgo.png' target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/Pima/PimaAlgo.png"
+                            span FCC PlanetScope images before and after the event and initial results of the random forest algorithm along with naive NDWI thresholding. Figure Credit: #{collaborator('rMukherjee')}
+                        br
+                        | This permits to identify the changes in the landscape, and seems to be most promising with the algorithms we developed.
                 br
                 h4 Presentations given on the subject
                 tt

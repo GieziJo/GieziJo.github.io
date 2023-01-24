@@ -1,0 +1,80 @@
+#CSDAP
+    .column
+        .contentSection
+            .scienceWorkContent
+                h3 Public vs Commercial Satellite data: creating a high resolution flood dataset to assess their advantages
+                .scienceCollaborators
+                    | Collaborators: 
+                    = collaborator('zZhang')
+                    = collaborator('aMelancon')
+                    = collaborator('rMukherjee')
+                    = collaborator('iGurung')
+                    = collaborator('mPurri')
+                    = collaborator('sLuca')
+                    = collaborator('uLall')
+                    = collaborator('kBarnard')
+                    = collaborator('aMolthan')
+                    = collaborator('bTellman')
+                
+                | This project proposes to create a high-resolution dataset of flood events labelled on 
+                a href="https://www.planet.com/" target="_blank" rel="noopener noreferrer" PlanetScope
+                |  imagery. The main goal of the project is to understand if publicly available data can be as effective in detecting floods as commercial data.
+                br
+                br
+                details
+                    summary
+                        .summary
+                            .summaryImage
+                                img src="./Images/Science/CSDAP/FloodPlanet_locations.png"
+                            span 
+                                | Locations of the different labelled flood events, with their corresponding publicly available datasets. Figure credit: #{collaborator('zZhang')}
+                        .summaryText
+                            | Click to Read On
+                            br
+                            pre ↓ 
+                    div
+                        br
+                        br
+                        | One of the main outputs of this work is to publish a publicly available high resolution flood dataset.
+                        |  The selected flood events are based on existing flood event datasets (
+                        a href="https://xview2.org/dataset" target="_blank" rel="noopener noreferrer" xBD
+                        | , 
+                        a href="https://github.com/cloudtostreet/Sen1Floods11" target="_blank" rel="noopener noreferrer" Sen1FLoods11
+                        | , 
+                        a href="https://nasa-impact.github.io/etci2021/" target="_blank" rel="noopener noreferrer" NASA IMPACT
+                        | , FloodPlanet (in house)), in order to be able to compare with other lower resolution datasets, but also label a few new events.
+                        br
+                        br
+                        .ScienceInsert#CSDAPSampling
+                            a href="./Images/Science/CSDAP/Sampling.png" target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/CSDAP/Sampling.png"
+                            span Example of chip selection for a flood event: the blue dots represent where a full chip (with no missing data) is available, the colored chips then represent a first sampling meant accurately reproducing the distribution of the overall dataset, done via Latin Hypercube Sampling, the chips are then clustered based on spatial distribution via k-means (the different colors), and finally within these clusters, one chip is selected to be furthest apart from all other chips. A total of 15-20 chips per event are selected for the hand labelling process (depending on the quality of the chips).
+                        br
+                        .ScienceInsert.leftInsert#CSDAPLabelImage
+                            a href="./Images/Science/CSDAP/Labels.png" target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/CSDAP/Labels.png"
+                            span Example of two PlanetScope chips (False Color Composite (FCC)) and the hand labelled data. Figure credit: #{collaborator('zZhang')}
+                        br
+                        br
+                        span#ScienceSpacing
+                            br
+                            br
+                            br
+                        | In the context of this work, I have mainly been involved in writing a pipeline to download and process PlanetScope scenes into chips, from which we sample a representative subset which is then labelled (c.f. figure above). 
+                        br
+                        br
+                        | The events have been selected to coincide in time with available Harmonized Landsat Sentinel-2 (HLS) or Sentinel-1 data, such that deep learning models can be developed to compare the commercial vs public data source.
+                        br
+                        br
+                        | For each event, the selected chips have been hand labelled with three classes: no water, low confidence water, high confidence water (c.f. figure).
+                        br
+                        br
+                        | The data processing and labelling of all events has been completed, and we are currently working on releasing the dataset along with baseline model results (deep learning both on public and commercial data).
+                        span#ScienceSpacing
+                            br
+                            br
+                            br
+                            br
+
+        .BackgroundImageSource
+            | Background image: Selection of chips of PlanetScope False Color Composite, overlaid with flood labels for a flood event in Bolivia on Feb. 15 2018.

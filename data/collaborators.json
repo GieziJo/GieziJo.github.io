@@ -87,6 +87,42 @@
         "firstName": "Andrea",
         "lastName": "Rinaldo",
         "website": "https://people.epfl.ch/andrea.rinaldo"
+    },
+    "zZhang": {
+        "firstName": "Zhijie",
+        "lastName": "Zhang",
+        "website": "https://geography.arizona.edu/people/zhijie-zhang"
+    },
+    "aMelancon": {
+        "firstName": "Alexander",
+        "lastName": "Melancon",
+        "website": "https://www.linkedin.com/in/alexander-melancon-865165154/"
+    },
+    "iGurung": {
+        "firstName": "Iksha",
+        "lastName": "Gurung",
+        "website": "https://www.linkedin.com/in/xhagrg/"
+    },
+    "sLuca": {
+        "firstName": "Sarah",
+        "lastName": "Luca",
+        "website": "https://appliedmath.arizona.edu/person/sarah-luca"
+    },
+    "kBarnard": {
+        "firstName": "Kobus",
+        "lastName": "Barnard",
+        "website": "https://www2.cs.arizona.edu/~kobus/"
+    },
+    "aMolthan": {
+        "firstName": "Andrew",
+        "lastName": "Molthan",
+        "website": "https://appliedsciences.nasa.gov/about/our-team/andrew-molthan"
+    },
+    "aSaunders": {
+        "firstName": "Alex",
+        "lastName": "Saunders",
+        "website": "https://www.linkedin.com/in/alex-saunders-89ab9512b/"
     }
+    
 }
 

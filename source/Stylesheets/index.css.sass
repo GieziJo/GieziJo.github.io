@@ -404,16 +404,17 @@ a
         padding-right: 5px
         &:not(:last-child):after
             content: ", "
+        &:last-child
+            font-weight: bold
 
-.scienceLastCollaborator
-    display: inline-block
-    font-weight: bold
+@media only screen and (max-width: 1000px)
+        #ScienceSpacing
+            display: none
 
 @import "partials/_nip"
-
 @import "partials/_pima"
-
 @import "partials/_gpnp"
+@import "partials/_csdap"
 
 .papers
 .paper
