@@ -1,6 +1,15 @@
 {
     "papers": [
         {
+            "title": "Inferring the past: a combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping",
+            "authors": "<b>Giezendanner, J</b>, Mukherjee, R, Purri, M, Thomas, M, Mauerman, M, Islam, A.K.M. S, Tellman, B",
+            "journal": " Computer Vision and Pattern Recognition Conference (CVPR), EARTHVISION",
+            "year": 2023,
+            "link": "https://arxiv.org/abs/2305.00640",
+            "doi": "",
+            "image": ""
+        },
+        {
             "title": "A note on the role of seasonal expansions and contractions of the flowing fluvial network on metapopulation persistence",
             "authors": "<b>Giezendanner, J</b>, Benettin, P, Durighetto, N, Botter, G, Rinaldo, A",
             "journal": "Water Resources Research",
