@@ -2,7 +2,7 @@
     "papers": [
         {
             "title": "Inferring the past: a combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping",
-            "authors": "<b>Giezendanner, J</b>, Mukherjee, R, Purri, M, Thomas, M, Mauerman, M, Islam, A.K.M. S, Tellman, B",
+            "authors": "<b>Giezendanner J.</b>, Mukherjee R., Purri M., Thomas M., Mauerman M., Islam A.K.M. S., Tellman B.",
             "journal": " Computer Vision and Pattern Recognition Conference (CVPR), EARTHVISION",
             "year": 2023,
             "link": "https://arxiv.org/abs/2305.00640",
@@ -11,7 +11,7 @@
         },
         {
             "title": "A note on the role of seasonal expansions and contractions of the flowing fluvial network on metapopulation persistence",
-            "authors": "<b>Giezendanner, J</b>, Benettin, P, Durighetto, N, Botter, G, Rinaldo, A",
+            "authors": "<b>Giezendanner J.</b>, Benettin P., Durighetto N., Botter G., Rinaldo A.",
             "journal": "Water Resources Research",
             "year": 2021,
             "link": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021WR029813",
@@ -20,7 +20,7 @@
         },
         {
             "title": "Earth and field observations underpin metapopulation dynamics in complex landscapes: Near-term study on carabids",
-            "authors": "<b>Giezendanner, J</b>, Pasetto, D, Perez-Saez, J, Cerrato, C, Viterbi, R, Terzago, S, Palazzi, E, Rinaldo, A",
+            "authors": "<b>Giezendanner J.</b>, Pasetto D., Perez-Saez J., Cerrato C., Viterbi R., Terzago S., Palazzi E., Rinaldo A.",
             "journal": "Proceedings of the National Academy of Sciences",
             "year": 2020,
             "link": "https://www.pnas.org/doi/10.1073/pnas.1919580117",
@@ -29,7 +29,7 @@
         },
         {
             "title": "Beyond the patch: on landscape-explicit metapopulation dynamics",
-            "authors": "<b>Giezendanner, J</b>",
+            "authors": "<b>Giezendanner J.</b>",
             "journal": "PhD Thesis",
             "year": 2020,
             "link": "https://infoscience.epfl.ch/record/273932?ln=en",
@@ -38,7 +38,7 @@
         },
         {
             "title": "On the probabilistic nature of the species-area relation",
-            "authors": "Zaoli, S, Giometto, A, <b>Giezendanner, J</b>, Maritan, A, Rinaldo, A",
+            "authors": "Zaoli S., Giometto A., <b>Giezendanner J.</b>, Maritan A., Rinaldo A.",
             "journal": "Journal of Theoretical Biology",
             "year": 2019,
             "link": "https://www.sciencedirect.com/science/article/pii/S0022519318305848",
@@ -47,7 +47,7 @@
         },
         {
             "title": "A minimalist model of extinction and range dynamics of virtual mountain species driven by warming temperatures",
-            "authors": "<b>Giezendanner, J</b>, Bertuzzo, E, Pasetto, D, Guisan, A, Rinaldo, A",
+            "authors": "<b>Giezendanner J.</b>, Bertuzzo E., Pasetto D., Guisan A., Rinaldo A.",
             "journal": "PLoS One",
             "year": 2019,
             "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0213775",
@@ -56,7 +56,7 @@
         },
         {
             "title": "Towards 3-D distributed odor source localization: an extended graph-based formation control algorithm for plume tracking",
-            "authors": "Soares, J M, Marjovi, A, <b>Giezendanner, J</b>, Kodiyan, A, Aguiar, A P, Pascoal, A M, Martinoli, A",
+            "authors": "Soares J. M., Marjovi A., <b>Giezendanner J.</b>, Kodiyan A., Aguiar A. P., Pascoal A. M., Martinoli A.",
             "journal": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
             "year": 2016,
             "link": "https://ieeexplore.ieee.org/document/7759277",
@@ -65,7 +65,7 @@
         },
         {
             "title": "Automatic quality assessment of short and long-TE brain tumour MRSI data using novel Spectral Features",
-            "authors": "de Barros, N P, McKinley, R, <b>Giezendanner, J</b>, Knecht, U, Wiest, R, Slotboom, J",
+            "authors": "de Barros N. P., McKinley R., <b>Giezendanner J.</b>, Knecht U., Wiest R., Slotboom J.",
             "journal": "Proc. Intl. Soc. Mag. Reson. Med",
             "year": 2016,
             "link": "https://archive.ismrm.org/2016/0022.html",
@@ -74,7 +74,7 @@
         },
         {
             "title": "Rainfall Forecasting in Burkina Faso Using Bayesian-Wavelet Neural Networks",
-            "authors": "<b>Giezendanner, J</b>",
+            "authors": "<b>Giezendanner J.</b>",
             "journal": "Master Thesis",
             "year": 2015,
             "link": "https://infoscience.epfl.ch/record/213510?ln=en",
