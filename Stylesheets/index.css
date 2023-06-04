@@ -621,6 +621,8 @@ a {
 
 .paperInfo {
   font-weight: 200; }
+  .paperInfo b {
+    text-decoration: underline; }
 
 #gameDev {
   font-weight: 300; }
