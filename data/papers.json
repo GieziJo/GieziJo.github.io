@@ -1,6 +1,33 @@
 {
     "papers": [
         {
+            "title": "FloodPlanet: A Dataset to Assess Deep Learning Models Trained on Public versus Commercial Data for Inundation Detection",
+            "authors": "Zhang, Z., <b>Giezendanner, J.</b>, Melancon, A., Mukherjee, R., Gurung, I., Lall, U., Barnard, K., Molthan, A., Tellman, B.",
+            "journal": "In Preparation",
+            "year": "",
+            "link": "",
+            "doi": "",
+            "image": ""
+        },
+        {
+            "title": "Urban Flood Dataset: A globally sampled high resolution hand labeled dataset for training and validating flood extent",
+            "authors": "Mukherjee, R., Friedrich, H., Tellman, B., <b>Giezendanner, J.</b>, Zhang, Z., Islam, A.",
+            "journal": "In Preparation",
+            "year": "",
+            "link": "",
+            "doi": "",
+            "image": ""
+        },
+        {
+            "title": "A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps",
+            "authors": "Mukherjee, R., Policelli, F., Wang, R., Tellman, B., Sharma, P., Zhang, Z., <b>Giezendanner, J.</b>",
+            "journal": "Submitted",
+            "year": "",
+            "link": "",
+            "doi": "",
+            "image": ""
+        },
+        {
             "title": "Inferring the past: a combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping",
             "authors": "<b>Giezendanner J.</b>, Mukherjee R., Purri M., Thomas M., Mauerman M., Islam A.K.M. S., Tellman B.",
             "journal": " Computer Vision and Pattern Recognition Conference (CVPR), EARTHVISION",
@@ -83,4 +110,3 @@
         }
     ]
 }
-
