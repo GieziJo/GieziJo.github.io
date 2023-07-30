@@ -2,7 +2,7 @@
     "papers": [
         {
             "title": "FloodPlanet: A Dataset to Assess Deep Learning Models Trained on Public versus Commercial Data for Inundation Detection",
-            "authors": "Zhang, Z., <b>Giezendanner, J.</b>, Melancon, A., Mukherjee, R., Gurung, I., Lall, U., Barnard, K., Molthan, A., Tellman, B.",
+            "authors": "Zhang Z., <b>Giezendanner J.</b>, Melancon A., Mukherjee R., Gurung I., Lall U., Barnard K., Molthan A., Tellman B.",
             "journal": "In Preparation",
             "year": "n. d.",
             "link": "",
@@ -11,7 +11,7 @@
         },
         {
             "title": "Urban Flood Dataset: A globally sampled high resolution hand labeled dataset for training and validating flood extent",
-            "authors": "Mukherjee, R., Friedrich, H., Tellman, B., <b>Giezendanner, J.</b>, Zhang, Z., Islam, A.",
+            "authors": "Mukherjee R., Friedrich H., Tellman B., <b>Giezendanner J.</b>, Zhang Z., Islam A.",
             "journal": "In Preparation",
             "year": "n. d.",
             "link": "",
@@ -20,7 +20,7 @@
         },
         {
             "title": "A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps",
-            "authors": "Mukherjee, R., Policelli, F., Wang, R., Tellman, B., Sharma, P., Zhang, Z., <b>Giezendanner, J.</b>",
+            "authors": "Mukherjee R., Policelli F., Wang R., Tellman B., Sharma P., Zhang Z., <b>Giezendanner J.</b>",
             "journal": "Submitted",
             "year": "n. d.",
             "link": "",
@@ -28,9 +28,18 @@
             "image": ""
         },
         {
+            "title": "A Comparison of Remote Sensing Approaches to Assess the Devastating May - June 2022 Flooding in Sylhet, Bangladesh",
+            "authors": "Saunders A., <b>Giezendanner J.</b>, Tellman B., Islam A., Bhuyan A., Islam A.K.M. S.",
+            "journal": "2023 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+            "year": 2023,
+            "link": "",
+            "doi": "",
+            "image": ""
+        },
+        {
             "title": "Inferring the past: a combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping",
             "authors": "<b>Giezendanner J.</b>, Mukherjee R., Purri M., Thomas M., Mauerman M., Islam A.K.M. S., Tellman B.",
-            "journal": " Computer Vision and Pattern Recognition Conference (CVPR), EARTHVISION",
+            "journal": "Computer Vision and Pattern Recognition Conference (CVPR), EARTHVISION",
             "year": 2023,
             "link": "https://openaccess.thecvf.com/content/CVPR2023W/EarthVision/html/Giezendanner_Inferring_the_Past_A_Combined_CNN-LSTM_Deep_Learning_Framework_To_CVPRW_2023_paper.html",
             "doi": "",
