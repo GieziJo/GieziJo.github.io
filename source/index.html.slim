@@ -150,7 +150,7 @@
                 
                 #papers
                     - data.papers.papers.each do |paper|
-                        .paper onclick="window.open('#{paper.link}')"
+                        .paper class=(paper.link != "" ? "paperLinkAnimation":"") onclick="#{paper.link != "" ? "window.open('#{paper.link}')" : ""}"
                             .paperTitle
                                 | #{paper.title}
                             .paperInfo
