@@ -612,15 +612,17 @@ a {
 .paper {
   margin-top: 10px;
   margin-bottom: 10px; }
-  .paper:hover {
-    color: #008cff;
-    cursor: pointer; }
+
+.paperLinkAnimation:hover {
+  color: #008cff;
+  cursor: pointer; }
 
 .paperTitle {
   font-weight: 700; }
 
 .paperInfo {
-  font-weight: 200; }
+  font-weight: 200;
+  font-size: small; }
   .paperInfo b {
     text-decoration: underline; }
 
