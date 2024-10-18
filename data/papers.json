@@ -1,9 +1,18 @@
 {
     "papers": [
         {
+            "title": "Multi-modal graph neural networks for localized off-grid weather forecasting",
+            "authors": "Yang Q., <b>Giezendanner J.</b>, Civitarese D. S., Jakubik J., Schmitt E., Chandra A., Vila J., Hohl D., Hill C., Watson C., Wang S.",
+            "journal": "Preprint",
+            "year": "2024",
+            "link": "https://arxiv.org/abs/2410.12938",
+            "doi": "",
+            "image": ""
+        },
+        {
             "title": "FloodPlanet: A Dataset to Assess Deep Learning Models Trained on Public versus Commercial Data for Inundation Detection",
             "authors": "Zhang Z., <b>Giezendanner J.</b>, Melancon A., Mukherjee R., Gurung I., Lall U., Barnard K., Molthan A., Tellman B.",
-            "journal": "In Preparation",
+            "journal": "Submitted",
             "year": "n. d.",
             "link": "",
             "doi": "",
@@ -12,7 +21,7 @@
         {
             "title": "Urban Flood Dataset: A globally sampled high resolution hand labeled dataset for training and validating flood extent",
             "authors": "Mukherjee R., Friedrich H., Tellman B., <b>Giezendanner J.</b>, Zhang Z., Islam A.",
-            "journal": "In Preparation",
+            "journal": "Submitted",
             "year": "n. d.",
             "link": "",
             "doi": "",
@@ -21,9 +30,9 @@
         {
             "title": "A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps",
             "authors": "Mukherjee R., Policelli F., Wang R., Tellman B., Sharma P., Zhang Z., <b>Giezendanner J.</b>",
-            "journal": "Submitted",
-            "year": "n. d.",
-            "link": "https://essd.copernicus.org/preprints/essd-2023-168/",
+            "journal": "Earth System Science Data",
+            "year": "2024",
+            "link": "https://essd.copernicus.org/articles/16/4311/2024/essd-16-4311-2024.html",
             "doi": "",
             "image": ""
         },
