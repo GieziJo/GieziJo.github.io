@@ -1,0 +1,81 @@
+#Weather
+    .column
+        .contentSection
+            .scienceWorkContent
+                h3 Hyper-local weather forecasting and downscaling
+                .scienceCollaborators
+                    | Collaborators: 
+                    = collaborator('qYang')
+                    = collaborator('sCivitarese')
+                    = collaborator('jJakubik')
+                    = collaborator('eSchmitt')
+                    = collaborator('aChandra')
+                    = collaborator('jVila')
+                    = collaborator('dHohl')
+                    = collaborator('cHill')
+                    = collaborator('cWatson')
+                    = collaborator('sWang')
+
+
+
+
+
+
+                
+                | This project aims at generating hyper-local weather forecasts, downscaling from global weather models to local scales and fixed and arbitrary locations.
+                br
+                br
+                details
+                    summary
+                        .summary
+                            .summaryImage
+                                img src="./Images/Science/Weather/ExtendedVars.png"
+                            span 
+                                | Comparison of data collected by weather stations (MADIS) and linearly interpolated global reanalysis data (ERA5).
+                        .summaryText
+                            | Click to Read On
+                            br
+                            pre ↓ 
+                    div
+                        br
+                        br
+                        | While a lot of the recent machine learning methods have focused on reproducing global weather reanalysis and forecast models, a discrepensasy exists between the global models and local weather stations. 
+                        | This project aims at downscaling global weather models to local scales, and even arbitrary locations, by combining global reanalysis data with local weather station data.
+                        br
+                        br
+                        .ScienceInsert.leftInsert#WeatherExperiments
+                            a href="./Images/Science/Weather/Experiments.png" target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/Weather/Experiments.png"
+                            span <b>Weather station and ERA5 graph for the US Northeast study region.</b> MADIS stations are shown as dark blue circles; the black edges connect each weather station in a Delaunay Network. ERA5 nodes are shown as light blue squares, and each weather station is connected to its 8 nearest ERA5 neighbors.
+                        br
+                        br
+                        | To tackle this task, we first focus on forecasting the weather at fixed locations. We developed a series of deep learning models that take as input reanalysis data (ERA5/HRRR) and local weather station data (MADIS), and output a forecast for the next 24 hours at the location of the weather station.
+                        br
+                        br
+                        .ScienceInsert.rightInsert#WeatherResults
+                            a href="./Images/Science/Weather/Results.png" target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/Weather/Results.png"
+                            span Model forcast errors with respect to 10m wind, 2m temperature, and 2m dewpoint at various lead times.
+                        br
+                        br
+                        | The results show that the models are able to accurately forecast the weather at the location of the weather station.
+                        br
+                        .ScienceInsert.leftInsert#WeatherTimeSeriesResults
+                            a href="./Images/Science/Weather/TimeSeriesComparison.png" target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/Weather/TimeSeriesComparison.png"
+                            span Example time series illustrating the transformer model's integration of HRRR-F into its prediction.
+                        | Our current focus lies in extending the model to arbitrary locations, by integrating the global reanalysis data with local weather station data, as well as satellite imagery.
+                        span#ScienceSpacing
+                br
+                h4 Publications
+                tt
+                    | [Preprint] 
+                a href='https://arxiv.org/abs/2410.12938' target="_blank" rel="noopener noreferrer"  <b>Yang et al.</b>, <i>2024</i> - Local Off-Grid Weather Forecasting with Multi-Modal Earth Observation Data
+                h4 Presentations given on the subject
+                tt
+                    | [Poster] 
+                a href='./Images/Science/Weather/Presentations/GeoCV2025_JonathanGiezendanner.pdf' target="_blank" rel="noopener noreferrer" <b>WACV - GeoCV</b>, <i>March 2025</i> - Combining Satellite Images and Local Weather Station Data for Accurate Hyper-Local Weather at Arbitrary Locations
+
+        .BackgroundImageSource
+            | Background image: Image of the GOES-19 geostationary weather satellite caputed on June. 4 2025, 15:20 EST. Fun fact: 
+            a href="https://jgiezend.users.earthengine.app/view/goes-latest" target="_blank" rel="noopener noreferrer" I wrote a Google Earth Engine Applet to visualise the latest GOES-19 image.

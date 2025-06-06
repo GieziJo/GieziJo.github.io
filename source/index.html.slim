@@ -27,7 +27,7 @@
                     a.icon.icon-linkedin href="https://www.linkedin.com/in/j-giezendanner/" target="_blank" rel="noopener noreferrer"
                     a.icon.icon-github href="https://github.com/GieziJo" target="_blank" rel="noopener noreferrer"
                     a.icon.icon-scholar href="https://scholar.google.ch/citations?user=cNxEnK4AAAAJ" target="_blank" rel="noopener noreferrer"
-                    a.icon.icon-twitter href="https://twitter.com/JoGiezi" target="_blank" rel="noopener noreferrer"
+                    a.icon.icon-bsky href="https://bsky.app/profile/jgiezendanner.com" target="_blank" rel="noopener noreferrer"
                     a.icon.icon-mastodon href="https://sigmoid.social/@JoGiezi" target="_blank" rel="me"
         
         .contentSection
@@ -43,7 +43,7 @@
                 |  and other environmental and societal challenges.
                 br
                 br
-                | Interested in technology, I am proficient in multiple programming languages (e.g. c#, Python, javascript) and frameworks, such as 
+                | Interested in technology, I am proficient in multiple programming languages (e.g. Python, c#, javascript) and frameworks, such as 
                 a href="https://www.fast.ai/" fast.ai
                 | , 
                 a href="https://pytorch.org/" PyTorch
@@ -62,8 +62,10 @@
                 br
                 a.LearnMoreLink href="#science" ➞ My research
                 br
+                a.LearnMoreLink href="#publications" ➞ My publications
                 br
-                | As a passion project, I co-founded the company 
+                br
+                | As a passion project, I co-founded 
                 a href="https://earlycoffee.games/" target="_blank"  rel="noopener noreferrer" Early Coffee Games
                 |  where I am the lead developer.
                 br
@@ -92,12 +94,12 @@
                 br
                 br
                 | Currently working in the 
-                a href='https://beth-tellman.github.io/' target="_blank"  rel="noopener noreferrer" Social [Pixel] Lab
-                |  led by Prof. E. Tellman Sullivan at the 
-                a href="https://www.arizona.edu/" University of Arizona
+                a href="https://earthintelligence.mit.edu/" target="_blank"  rel="noopener noreferrer" Earth Intelligence Lab
+                |  led by Prof. Sherrie Wang in Boston at the 
+                a href="https://www.mit.edu/" target="_blank"  rel="noopener noreferrer" Massachusetts Institute of Technology (MIT)
                 | , I am expanding my understanding of 
                 b Deep Learning
-                |  methods applied to floods and other challenging problems linked to the environment and its impact on society.
+                |  methods applied to challenging problems linked to the environment and its impact on society.
                 br
                 br
                 | In my spare time, I co-founded the company 
@@ -114,34 +116,40 @@
             .contentSection
                 h1 Science
                 .intro
-                    | The common theme throughout my work has been mathematical modelling of environmental challenges, be it as it currently is flood mapping with deep learning, or previously process based models of population dynamics.
+                    | The common theme throughout my work has been mathematical modelling of environmental challenges, be it as it currently is weather forecasting, or previously flood mapping with deep learning, or process based models of population dynamics.
                     br
                     br
                     | In both my current and past work, optimisation and inference have played a major role.
                     br
                     br
-                    | Presented here are chosen topics of my current and past work (wip).
+                    | Presented here are chosen topics of my current and past work.
     #scienceCurrent
         .column
             .contentSection
                 h2 Current Work
-                | My current work focuses on developing novel Deep Learning solutions to Remote Sensing products in order to address environmental and societal challenges, mainly, but not exclusively, flood mapping.
+                | My current work focuses on developing novel Deep Learning solutions to Remote Sensing applications in order to address environmental and societal challenges.
                 br
                 br
-                | Presented here is my main work on flood mapping.
+                | My current focus is on hyper-local weather forecasting and downscaling.
                 br
                 br
         
-        = partial "contentPartials/science/nip"
-        
-        = partial "contentPartials/science/pima"
-
-        = partial "contentPartials/science/csdap"
+        = partial "contentPartials/science/weather"
                             
     #sciencePast
         .column
             .contentSection
                 h2 Past Work
+
+
+        
+        = partial "contentPartials/science/nip"
+
+        / = partial "contentPartials/science/viirs"
+
+        = partial "contentPartials/science/csdap"
+        
+        = partial "contentPartials/science/pima"
 
         = partial "contentPartials/science/gpnp"
 

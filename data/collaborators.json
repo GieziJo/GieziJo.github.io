@@ -122,7 +122,66 @@
         "firstName": "Alex",
         "lastName": "Saunders",
         "website": "https://www.linkedin.com/in/alex-saunders-89ab9512b/"
+    },
+    "fPolicelli": {
+        "firstName": "Frederick S",
+        "lastName": "Policelli",
+        "website": "https://science.gsfc.nasa.gov/sci/bio/frederick.s.policelli"
+    },
+    "qYang": {
+        "firstName": "Qidong",
+        "lastName": "Yang",
+        "website": "https://scholar.google.es/citations?user=kOD_Z30AAAAJ&hl=en"
+    },
+    "sCivitarese": {
+        "firstName": "Daniel Salles",
+        "lastName": "Civitarese",
+        "website": "https://research.ibm.com/people/daniel-salles-civitarese"
+    },
+    "jJakubik": {
+        "firstName": "Johannes",
+        "lastName": "Jakubik",
+        "website": "https://www.linkedin.com/in/johannes-jakubik-8763ba167/"
+    },
+    "eSchmitt": {
+        "firstName": "Eric",
+        "lastName": "Schmitt",
+        "website": "https://www.linkedin.com/in/eric-schmitt-90423627/"
+    },
+    "aChandra": {
+        "firstName": "Anirban",
+        "lastName": "Chandra",
+        "website": "https://www.linkedin.com/in/anirban-c-52577659/"
+    },
+    "jVila": {
+        "firstName": "Jeremy",
+        "lastName": "Vila",
+        "website": "https://www.linkedin.com/in/jeremy-vila/"
+    },
+    "dHohl": {
+        "firstName": "Detlef",
+        "lastName": "Hohl",
+        "website": "https://energycouncil.com/event-speakers/detlef-hohl/"
+    },
+    "cHill": {
+        "firstName": "Chris",
+        "lastName": "Hill",
+        "website": "https://erlweb.mit.edu/people/christopher-hill/"
+    },
+    "cWatson": {
+        "firstName": "Campbell",
+        "lastName": "Watson",
+        "website": "https://research.ibm.com/people/campbell-watson"
+    },
+    "sWang": {
+        "firstName": "Sherrie",
+        "lastName": "Wang",
+        "website": "https://sherriewang.github.io/"
     }
+
+
+    
+    
     
 }
 
