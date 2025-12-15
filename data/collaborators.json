@@ -177,11 +177,31 @@
         "firstName": "Sherrie",
         "lastName": "Wang",
         "website": "https://sherriewang.github.io/"
+    },
+    "cZhang":{
+        "firstName": "Chenhui",
+        "lastName": "Zhang",
+        "website": "https://danielz.ch/"
+    },
+    "aYang":{
+        "firstName": "Adam",
+        "lastName": "Yang",
+        "website": "https://www.linkedin.com/in/adam-yang-17484b253/"
+    },
+    "rHuan":{
+        "firstName": "Ruizhe",
+        "lastName": "Huang",
+        "website": "https://www.linkedin.com/in/ruizhe-huang-058008269/"
+    },
+    "jSoler":{
+        "firstName": "Jordi Laguarta",
+        "lastName": "Soler",
+        "website": "https://www.linkedin.com/in/jordi-laguarta-soler/"
+    },
+    "xTong":{
+        "firstName": "Xin-yi",
+        "lastName": "Tong",
+        "website": "https://x-ytong.github.io/"
     }
-
-
-    
-    
-    
 }
 

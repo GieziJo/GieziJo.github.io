@@ -1,0 +1,66 @@
+#Satosm
+    .column
+        .contentSection
+            .scienceWorkContent
+                h3 SatOSM: Training geospatial foundation models with the Earth’s largest open ground truth
+                .scienceCollaborators
+                    | Collaborators: 
+                    = collaborator('cZhang')
+                    = collaborator('aYang')
+                    = collaborator('rHuan')
+                    = collaborator('jSoler')
+                    = collaborator('xTong')
+                    = collaborator('sWang')
+
+                | SatOSM is a large-scale geospatial foundation model and dataset that fuses 
+                a href="https://www.openstreetmap.org/#map=15/46.94744/7.45156" target="_blank" rel="noopener noreferrer" OpenStreetMap
+                |  data with high-resolution imagery to build Earth observation embeddings.
+                br
+                br
+                details
+                    summary
+                        .summary
+                            .summaryImage
+                                img src="./Images/Science/SatOSM/ModelArch.png"
+                            span 
+                                | SatOSM architecture integrating both high resolution images and OSM tags.
+                        .summaryText
+                            | Click to Read On
+                            br
+                            pre ↓ 
+                    div
+                        br
+                        br
+                        .ScienceInsert.leftInsert
+                            a href="./Images/Science/SatOSM/ImageExample.png" target="_blank" rel="noopener noreferrer"
+                                img src="./Images/Science/SatOSM/ImageExample.png"
+                            span <b>Example of high resolution aerial images with OSM tags overlayed.
+                        br
+                        br
+                        | SatOSM integrates 34 million high-resolution aerial image chips with 122 million OpenStreetMap object instances, providing precise spatial and semantic supervision across Europe. The dataset preserves OSM’s open-vocabulary tagging, enabling research on open-set, fine-grained, and geographically diverse Earth observation tasks.
+                        br
+                        br
+                        | The accompanying model, SatOSM-Net, is a multimodal vision transformer that aligns image features with OpenStreetMap geometries and tags. It combines self-supervised visual learning objectives from DINOv2 with a CLIP-style contrastive loss between region-level image and tag embeddings. This training strategy allows the model to learn both spatially grounded and semantically meaningful representations from large-scale geospatial data.
+                        br
+                        br
+                        | Experimentally, SatOSM-Net achieves state-of-the-art performance on high-resolution segmentation benchmarks, including AI4Boundaries and MiniFrance, and performs competitively on xView2. The dataset and pretrained models are publicly available for reproducible research, supporting scalable, open-vocabulary pretraining in Earth observation and facilitating the development of more generalizable geospatial AI systems.
+                        span#ScienceSpacing
+                br
+                / h4 Publications
+                / tt
+                /     | [JAMES] 
+                / a href='https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005207' target="_blank" rel="noopener noreferrer"  <b>Yang et al.</b>, <i>2025</i> - Local Off-Grid Weather Forecasting with Multi-Modal Earth Observation Data
+                / h4 Presentations given on the subject
+                / tt
+                /     | [Talk] 
+                / a href='./Images/Science/Weather/Presentations/ESA_Living_Planet_JonathanGiezendanner.pdf' target="_blank" rel="noopener noreferrer" <b>ESA Living Planet Symposium</b>, <i>June. 2025</i> - Hyper-Local Weather Powered by Global Weather & Earth Observations
+                / br
+                / br
+                / tt
+                /     | [Poster] 
+                / a href='./Images/Science/Weather/Presentations/GeoCV2025_JonathanGiezendanner.pdf' target="_blank" rel="noopener noreferrer" <b>WACV - GeoCV</b>, <i>March 2025</i> - Combining Satellite Images and Local Weather Station Data for Accurate Hyper-Local Weather at Arbitrary Locations
+
+        .BackgroundImageSource
+            | Background image: Composite of a high resolution satellite image (left, ESRI Tiles) and 
+            a href="https://www.openstreetmap.org/#map=15/46.94744/7.45156" target="_blank" rel="noopener noreferrer" OpenStreetMap
+            |  (right) over the city of Bern, Switzerland
