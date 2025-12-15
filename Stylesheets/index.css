@@ -660,6 +660,33 @@ a {
     width: 500px;
     margin-left: -150px; } }
 
+#Satosm {
+  background-image: url("../Images/Science/SatOSM/Background.png");
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #Satosm .summary {
+    height: 250px; }
+  @media only screen and (max-width: 800px) {
+    #Satosm {
+      background-position-y: bottom;
+      background-attachment: local; } }
+@media only screen and (min-width: 1100px) {
+  #WeatherExperiments {
+    width: 500px;
+    margin-left: -150px; }
+  #WeatherResults {
+    width: 500px;
+    margin-right: -150px; }
+  #WeatherTimeSeriesResults {
+    width: 500px;
+    margin-left: -150px; } }
+
 .paper {
   margin-top: 10px;
   margin-bottom: 10px; }
