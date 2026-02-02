@@ -1,6 +1,15 @@
 {
     "papers": [
         {
+            "title": "Conformal Prediction for Generative Models via Adaptive Cluster-Based Density Estimation",
+            "authors": "Yang Q., Zhu Q. J., <b>Giezendanner J.</b>, Marzouk Y., Bates S., Wang S.",
+            "journal": "Preprint",
+            "year": "2026",
+            "link": "https://arxiv.org/abs/2601.22298",
+            "doi": "https://doi.org/10.48550/arXiv.2601.22298",
+            "image": ""
+        },
+        {
             "title": "Local Off-Grid Weather Forecasting with Multi-Modal Earth Observation Data",
             "authors": "Yang Q., <b>Giezendanner J.</b>, Civitarese D. S., Jakubik J., Schmitt E., Chandra A., Vila J., Hohl D., Hill C., Watson C., Wang S.",
             "journal": "Journal of Advances in Modeling Earth Systems",
