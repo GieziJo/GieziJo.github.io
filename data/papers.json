@@ -1,6 +1,15 @@
 {
     "papers": [
         {
+            "title": "Partial recovery of meter-scale surface weather",
+            "authors": "<b>Giezendanner J.</b>, Yang Q., Civitarese D. S., Jakubik J., Schmitt E., Chandra A., Vila J., Hohl D., Watson C., Wang S.",
+            "journal": "Preprint",
+            "year": "2026",
+            "link": "https://arxiv.org/abs/2602.23146",
+            "doi": "https://doi.org/10.48550/arXiv.2602.23146",
+            "image": ""
+        },
+        {
             "title": "Conformal Prediction for Generative Models via Adaptive Cluster-Based Density Estimation",
             "authors": "Yang Q., Zhu Q. J., <b>Giezendanner J.</b>, Marzouk Y., Bates S., Wang S.",
             "journal": "Preprint",
