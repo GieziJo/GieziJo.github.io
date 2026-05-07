@@ -1,6 +1,15 @@
 {
     "papers": [
         {
+            "title": "Fractional water detection with VIIRS and deep learning to enhance global flood monitoring",
+            "authors": "Saunders A., <b>Giezendanner J.</b>, Tellman B., Slayback D., Policelli F., Zhang R., Mukherjee R.",
+            "journal": "Preprint",
+            "year": "2026",
+            "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6554000",
+            "doi": "https://dx.doi.org/10.2139/ssrn.6554000",
+            "image": ""
+        },
+        {
             "title": "Partial recovery of meter-scale surface weather",
             "authors": "<b>Giezendanner J.</b>, Yang Q., Civitarese D. S., Jakubik J., Schmitt E., Chandra A., Vila J., Hohl D., Watson C., Wang S.",
             "journal": "Preprint",
