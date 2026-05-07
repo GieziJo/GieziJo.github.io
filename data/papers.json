@@ -73,12 +73,12 @@
             "image": ""
         },
         {
-            "title": "Urban Flood Dataset: A globally sampled high resolution hand labeled dataset for training and validating flood extent",
-            "authors": "Mukherjee R., Friedrich H., Tellman B., <b>Giezendanner J.</b>, Zhang Z., Islam A.",
-            "journal": "Submitted",
-            "year": "n. d.",
-            "link": "",
-            "doi": "",
+            "title": "Urban Flood Observations (UFO): A hand-labeled training and validation dataset of post-flood inundation",
+            "authors": "Mukherjee R., Friedrich H., Tellman B., Islam A., Zhang Z., <b>Giezendanner J.</b>, Lall U., Lakshmi V.",
+            "journal": "Preprint",
+            "year": "2026",
+            "link": "https://arxiv.org/abs/2604.23066",
+            "doi": "https://doi.org/10.48550/arXiv.2604.23066",
             "image": ""
         },
         {
